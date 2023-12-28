@@ -1,0 +1,4335 @@
+
+
+E-alphla:
+===========================================================================
+
+In this project ,
+ E-shooper is e-commerce online shopping  website where people can buy physical goods,
+services, and digital products over the internet.
+application has diﬀerent interfaces for Admins and Users 
+In user site user can registerd himself, browse througout the website for various products with multiple filters &search
+and add product to cart and process for the buying product with payment offline or online in both mode
+we have developed a Custom Admin site for back-end administrators to
+manage orders, users, products and it gives the reports of
+Sales,Customers product and Customers response.
+and also Integrated Payment Gateway with PayPal,Razorpay and Stripe.
+
+===========================================================================
+
+Ealpha is a comprehensive Learning Management System (LMS) that offers 
+features for online education and efficient school management.
+
+- It has Admin Panel to manage admins as well as provides school
+management for on-boarded schools. By using School and Branch
+admin dedicated logins dashboard admin can manage school activities such as  
+onboarding, regsitering and managing users, school timetable,attendance, school events,
+  gradebook,student performance reports card, promoting student many more thigs   
+- It provides Managing and assigning courses to the users which are
+uploaded in the system.
+- Platform provided to manage integrations(e-authr) and subscriptions.(email)
+- Teacher logins to create assignments and assessments and mark attendace of students
+- Student logins is to learn student books, courses, complete assignments, solve
+assessments.
+  parent can see their children reports  report like attendance,assignment,assessment. 
+
+Application Architecture:- Microservices Architecture
+Technologies -: Python,Django,Django ORM,Django REST,PostgreSQL,Git, Docker.
+
+
+AWS Services -: AWS cognito, AWS S3, AWS SES, AWS lambda, AWS
+SQS.
+Responsibilities-:
+- - Prepared project structure to follow for the development.
+- Developed API's as per requirements in diﬀerent modules..
+- Managed diﬀerent user registrations and logins using AWS cognito
+with SSO.
+- Managed ﬁle uploads using AWS s3.
+- Send emails using AWS SES.
+- Developed service to service API communication.
+- Finding out the areas of improvement in the application.
+
+
+===========================================================================================
+A) LANGUAGE :
+
+   Backend :
+     Python, Javascript
+    
+   Frontend :
+     Html, CSS, JS, BOOTSTRAP   
+    
+B) FRAMEWORK :
+    
+    1)Python :
+       Django-DRF, Flask, FastAPI 
+    
+    2)JS :
+       React-Js, Node js, Vue.js
+       
+     
+   LIBRARY :
+     pandas, numpy (data science library)
+
+
+C) DATABASES :
+     -DB :
+       SQL, PostgresSQL, MySQL, MangoDB, Redis etc
+    
+     -Search & analytics engine:
+       Apache Solr, Elastic Search, GraphQL
+
+    
+D) CLOUD SERVICE:
+     aws, azur, digital ocean, GCP
+	
+   
+E) TESTING & Automation:
+     PyTest, UnitTest, selenium, Scrapping
+     
+F) CONTAINER:
+     Docker, Kubernetes, Amazon ECS
+     
+G) VERSION CONTROL :
+     Github, Gitlab, Bitbucket
+     
+H) MISC :
+     DSA, WEB Basics,
+     
+     DevOps :
+     (CI/CD), infrastructure as code (IaC), and monitoring.  
+     
+     Distributed Systems:
+       RabbitMQ and Celery 
+       
+     PMT(project management tools):
+       Trello, Jira
+     
+     Communication
+     
+     Personal Projects
+     
+     Other:
+       ML,DL,NL,AI,WEB-3 
+     
+===========================================================================================
+
+# PYTHON #
+
+
+Basic's:
+  
+there are two types of programme in python 
+  note: whenever we run the script python interpreter internally set the some varaible(special variable)
+        print(dir()) ==) __name__  its value is __main__
+        
+        
+1) standalone programme:
+    __name__ value is __main__
+    
+   
+2) imported programme
+   __name__ value is imported module name
+   
+   __name variable tells how perticular script is invoked 
+
+
+1)  What is python?
+ans:
+    Python is a high-level, interpreted programming language 
+    that is widely used for various purposes such as 
+    web development, scientific computing, data analysis, AI,ML,automation and more.
+    Additionally, python supports objects, modules, threads, exception-handling, 
+    and automatic memory management,
+    python supports object oriented concept 
+    which help in modelling real-world problems and building applications to solve these problems.
+    
+   
+2)  What are Features of python?
+ans :  
+    interpreted
+    dynamically typed
+    OOP's
+    functions are first-class objects
+    Writing Python code is quick
+    Python finds use in many spheres
+ 
+ 
+Q)  What is pep 8?
+ans:
+    PEP stands for Python Enhancement Proposal. 
+    It is a set of rules that specify how to format Python code for maximum readability.
+    
+    the is the official style guide for writing Python code, and it provides guidelines 
+    and recommendations on how to format and structure Python code for better readability and maintainability.
+    
+    PEP 8 covers various aspects of coding style, including:
+    - Indentation
+    - Line Length
+    - Imports statments
+    - Whitespace
+    - Naming Conventions  (PEP 8 provides recommendations for naming variables, functions, classes, and modules)
+    - Comments and Documentation
+    - Function and Method Definitions
+    - Class Definitions
+    - Coding Practices
+    - Avoiding "Hungarian" Notation
+    
+3)  Benfits of python
+ans: 
+    1)Easy to use– Python is a high-level programming language that is easy to use, read, write and learn.
+    2)Interpreted language– Since python is interpreted language, 
+	it executes the code line by line and stops if an error occurs in any line.
+    3)Dynamically typed– the developer does not assign data types to variables at the time of coding.
+	 It automatically gets assigned during execution.
+    4)Free and open-source– Python is free to use and distribute. It is open source.
+    5)Extensive support for libraries– Python has vast libraries that contain almost any function needed.
+	 It also further provides the facility to import other packages using Python Package Manager(pip).
+    6)Portable– Python programs can run on any platform without requiring any change.
+    7)The data structures used in python are user friendly.
+    8)It provides more functionality with less coding.
+	
+4)  What applications did you build using python?
+ans :
+
+5)  Data Types:
+ans :  
+    
+    a)mutable 
+    - list,dictionary,set
+       
+       VS
+    
+    b)immutable
+    - string,int,tuple
+
+
+6)  Diff bet list & tuple?
+ans :
+
+    List:
+	  Lists and tuples are two of the most commonly used data structures in Python, 
+	  and they have many similarities, but also some key differences.
+	  A list is an ordered collection of items that can be changed, added, or removed dynamically. 
+	  Lists are defined using square brackets [] and each item is separated by a comma.
+	
+    Tuple:
+         A tuple is also an ordered collection of items, but unlike a list, it is immutable, 
+         meaning its elements cannot be modified after it is created. 
+         Tuples are defined using parentheses () and each item is also separated by a comma.
+        
+        
+    Use cases of Lists:
+
+        Lists are useful for storing and manipulating large amounts of data, such as database records or user inputs.
+        Lists are ideal when you need to add or remove items frequently, or when the order of the elements is important.
+        Real-life based example: Suppose you are writing a program to manage a grocery store inventory. 
+        You could use a list to store the names and quantities of each item in stock. 
+        You could add or remove items as the inventory changes.
+        
+    Use cases of Tuples:
+
+        Tuples are useful for grouping together related data that you don't want to change, such as a person's name and age.
+        Tuples can be more efficient than lists because they are immutable, so they take up less memory.
+        Real-life based example: Suppose you are writing a program to store the coordinates of different cities. 
+        You could use a tuple to store the latitude and longitude of each city. 
+        You could ensure that the coordinates are never changed by using tuples instead of lists.
+        
+    Note : 
+        In summary, lists and tuples are both useful data structures in Python, but they have different use cases. 
+	 Lists are ideal when you need to add or remove items frequently, 
+	 while tuples are more efficient and useful when you want to group related data that you don't want to change.
+  
+
+7)  Methods of:
+    a)list
+    b)string
+    c)dictionary
+ans:
+    
+ 
+8)  namespaces, scope, operators ,Keywords in python
+ans :
+
+    note: 
+       namespaces are about how names are organized and stored, 
+       while scopes determine where these names are valid and can be used within your program
+    
+    a) namespaces:
+      A namespace is a naming system used to make sure that names are unique to avoid naming conflicts.
+      
+      or
+      
+      namespace in python refers to the name which is assigned to each object in python. 
+      The objects are variables and functions. 
+      As each object is created, its name along with space(the address of the outer function in which the object is), gets created.
+      The namespaces are maintained in python like a dictionary where the key is the namespace and value is the address of the object. 	   
+      There 4 types of namespace in python- 
+       Built-in namespace
+       Global namespace
+       Enclosing namespace
+       Local namespaces
+       
+     or 
+     A namespace is a system that has a unique name for each and every object in Python. 
+     An object might be a variable or a method. Python itself maintains a namespace in the form of a Python dictionary.
+    
+     
+   b) Scope:
+      scope is a concept related to the visibility and accessibility of names within your code
+     
+     There 4 types of scope in python- 
+       1)Built-in scope:
+          The built-in scope contains the names of all Python's 
+          built-in functions, modules, and objects, such as print(), len(), and str().
+          
+          These names are available globally, and you can use them without importing any modules:
+          
+       2)Enclosing scope:
+          -An enclosing scope refers to an outer scope that contains the current local scope. 
+           It can be a function that contains another function, creating a nested function.
+          -Variables defined in an enclosing scope are accessible in the inner (nested) scope.
+          
+          def outer_function():
+              y = 20  # Enclosing scope variable
+
+             def inner_function():
+                print(y)  # y is accessible in the inner function
+
+            inner_function()
+          outer_function()
+         
+       3)Global scope:
+           -The global scope is the top-level scope that encompasses the entire Python module or script.
+             Variables defined in the global scope are referred to as "global variables" 
+           -and can be accessed from anywhere within the module or script.
+             Global variables have a lifetime equal to the runtime of the program.
+          
+       4)Local scope:
+           A local scope refers to the innermost or narrowest scope in which a variable is defined. 
+           It exists within a specific function, method, or code block.
+   
+     
+   c)Namespace Vs scope:
+     
+     Here's a summary of the differences between namespaces and scopes:
+
+     Namespace is about organizing and managing identifiers and their associated objects, 
+     while scope is about determining where these identifiers are accessible within your code.
+
+     -Namespace deals with the naming and categorization of identifiers, 
+       preventing naming conflicts by placing them in separate containers. 
+       Examples include local, global, enclosing, and built-in namespaces.
+
+     -Scope defines the regions within your code where variables have meaning and can be used. 
+       It specifies the accessibility of identifiers, whether they are limited to a specific function (local scope) 
+       or can be accessed from anywhere in a module (global scope).
+
+     -Namespace is a concept related to the organization and storage of names and objects, 
+       while scope is a concept related to the visibility and accessibility of names within your code.
+         
+       
+   d)keywords:
+      Keywords in python are reserved words that have special meaning.
+      They are generally used to define type of variables. 
+      Keywords cannot be used for variable or function names. There are following 33 keywords in python-
+    
+    
+Q)  What is the difference between .py and .pyc files?
+ans:
+    The .py files are the python source code files. 
+    While the .pyc files contain the bytecode of the python files. 
+    .pyc files are created when the code is imported from some other  source. 
+    The interpreter converts the source .py files to .pyc files which helps by saving time. 
+    
+Q)  What is PYTHONPATH?
+ans :
+    Pythonpath is a special environment variable that provides guidance to the
+    Python interpreter about where to find various libraries and applications.
+    It is used to set the path for the user-defined modules 
+    so that it can be directly imported into a Python program.
+ 
+Q)  What are python modules
+ans:
+    A Python module is a .py file containing executable code.
+    
+9)  break,continue,pass
+ans: 
+    a)break :
+      Allows loop termination when some condition is met and the control is transferred to the next statement.
+    
+    b)contiune :
+      Allows skipping some part of a loop when some specific condition is met and the control is transferred to the beginning of the loop
+      
+    c)pass :
+      Used when you need some block of code syntactically, but you want to skip its execution. 
+      This is basically a null operation. Nothing happens when this is executed.
+      
+      
+10) Memory management in python ?
+ans:
+    Memory management in python is managed by Python private heap space. 
+    All Python objects and data structures are located in a private heap. 
+    The programmer does not have access to this private heap. 
+    The python interpreter takes care of this instead.
+    The allocation of heap space for Python objects is done by Python’s memory manager.
+    Python also has an inbuilt garbage collector,
+    which recycles all the unused memory and so that it can be made available to the heap space.
+    
+    or 
+    
+    Memory management in Python is primarily handled by the Python interpreter and its underlying runtime environment. 
+    Python uses a combination of strategies to manage memory efficiently, including automatic memory allocation and 
+    deallocation through a mechanism called reference counting, as well as a garbage collection system.
+
+    Here are some key aspects of memory management in Python:
+
+    1. Reference Counting:
+      - Python uses a reference counting mechanism to keep track of how many references (i.e., variables, data structures, objects) 
+        are pointing to a particular object in memory.
+      - When an object's reference count drops to zero, it means there are no more references to it, 
+        and Python's memory manager can safely deallocate the memory occupied by that object.
+      - You can manually manage references using functions like `id()`, `sys.getrefcount()`, 
+        and the `del` statement to remove references.
+
+    2. Garbage Collection:
+      - While reference counting is efficient for most cases, it may not handle cyclic references 
+        (i.e., objects that reference each other in a cycle) correctly. To address this, Python includes a garbage collector.
+      - Python's garbage collector (e.g., CPython's `gc` module) periodically scans the memory for cyclic references 
+        and cleans them up, releasing the associated memory.
+
+    3. Memory Allocation and Deallocation:
+      - Python's memory manager handles the allocation and deallocation of memory blocks for objects. 
+        It uses memory pools to reduce the overhead of memory allocation and deallocation.
+      - Memory pools are managed by the Python memory allocator (e.g., Python's `malloc` and `free`), 
+        which requests and releases memory from the operating system in larger chunks than individual objects.
+ 
+    4. Memory Optimization:
+      - Python's memory management includes optimizations like object reuse and memory sharing 
+       to reduce the overhead of creating new objects.
+      - For example, Python's `int` and `str` objects are often cached and reused when small integers or strings 
+        are created to save memory.
+
+    5. Memory Profiling:
+      - You can use various tools and modules like `memory_profiler`, `tracemalloc`, and `sys.getsizeof()` 
+       to profile and analyze memory usage in your Python programs.
+   
+   6. Memory Management Best Practices:
+     - Be mindful of creating unnecessary objects, especially in loops, as it can lead to 
+      increased memory consumption and slower performance.
+     - Avoid circular references when possible or use weak references to break them.
+     - If you need to manage memory explicitly, use the `ctypes` module for working with C libraries or low-level memory manipulation.
+
+
+    Remember that while Python handles most memory management tasks automatically, 
+    it's still essential to be aware of memory usage, especially in large-scale applications. 
+    Efficient coding practices and profiling can help you identify and address memory-related issues in your Python programs.
+    
+   
+11) What is Parameter and arguments
+ans:
+   
+12) What are Functions ?
+ans: 
+    function is a block of code which is executed only when it is called. 
+    To define a Python function, the def keyword is used.
+
+
+13) What is Range function,len function
+15) *args vs **kwargs
+16) Lambda function,recursive function,decorators?
+ans:  
+   a)decorators:
+       Decorators are used to add some design patterns to a function without changing its structure.
+       
+       or 
+       
+       In Python, a decorator is a higher-order function that is used to modify or 
+       enhance the behavior of other functions or methods without changing their source code. 
+       Decorators are a powerful and flexible feature of the language and are often 
+       used for tasks such as adding functionality, applying preprocessing or postprocessing, 
+       and enforcing access control or authentication.
+
+       Decorators are applied to functions or methods using the @decorator_name syntax, placed above the function definition. 
+       When a decorated function is called, the decorator function is executed first, 
+       and it can modify the behavior of the original function.
+       
+       or 
+
+       In Python, decorators are a way to modify or extend the behavior of functions without changing their code directly. 
+       They are written as functions that take another function as input and return a new function. 
+       Decorators are often used for tasks like logging, validation, or adding additional functionality to functions. 
+       You can apply a decorator using the @decorator_name syntax above a function definition
+   
+   b)Lambda:
+       An anonymous function is known as a lambda function. 
+       This function can have any number of parameters but, can have just one statement.
+     
+   c) Recursion :
+   	  Recursion in Python refers to a programming technique where a function calls itself to solve a problem. 
+   	
+   	  A recursive function generally consists of two main components:
+   	  - Base Case:
+   	    This is the simplest scenario in which the function 
+   	    can solve the problem directly without making any further recursive calls. 
+   	    It serves as the stopping condition for the recursion.
+
+   	- Recursive Case:
+   	   The goal is to break down the problem into smaller subproblems until a base case is reached.
+   
+   d) First-class-object:
+       This means that first-class objects can be passed around as arguments to functions, 
+       returned as values from functions, assigned to variables, and stored in data structures.
+   
+   e) Higher-order functions:
+       A "higher-order function" is a concept from functional programming that refers to a 
+       function that takes one or more functions as arguments or returns a function as its result
+     
+Q)  string literal:
+ans:
+    A literal in python source code represents a fixed value for primitive data types. 
+    There are 5 types of literals in python-
+    literals are used to represent fixed values in code
+    
+    1) Numeric Literals
+    2) String Literals
+    3) Boolean Literals
+    4) None Literal
+    5) Literal Collections
+    
+
+Q   What is the purpose of ‘is’, ‘not’ and ‘in’ operators?
+Ans: 
+                                                                                                  
+    Operators are special functions. They take one or more values and produce a corresponding result.
+    is: returns true when 2 operands are true  (Example: “a” is ‘a’)
+
+    not: returns the inverse of the boolean value
+
+    in: checks if some element is present in some sequence
+
+17) what are : maps,generator,zip,filter, reduce,any,all?
+ans:
+    
+    diff map vs filter :
+    
+    map return original length list & in  filter it is not case 
+
+
+Q)  decorator , iterator, generator, iterable vs iter ?
+ans :
+     
+    a)iterator :
+        Iterators are containers for objects so that you can loop over the objects.
+        Iterators are the objects that use the next() method to get the next value of the sequence. 
+
+    b)generator :
+        Python provides a generator to create your own iterator function. 
+        A generator is a special type of function which does not return a single value, instead, 
+        it returns an iterator object with a sequence of values. 
+        In a generator function, a yield statement is used rather than a return statement.
+     
+        (A generator is a function that produces or yields a sequence of values using a yield statement)
+        
+      OR
+      
+      Generator are the functions that return a sequence of values. We use yield statment to return the value from function
+      generator produce generator object. on which we can perform loop 
+      
+    Q. Iterator :
+    	   In Python, an iterator is an object that enables iteration over a collection of elements or values. 
+    	   It provides a way to access the elements of a container one at a time,
+    	   
+       or 
+       	   
+       In Python, an iterator is an object that represents a stream of data or a sequence of elements 
+       that can be iterated (looped) over one element at a time. 
+       Iterators provide a way to access elements in a collection or generate elements on the fly 
+       without needing to know the underlying structure of the collection. 
+       They are commonly used in for loops, while loops, and other iteration constructs.
+
+       To create an iterator, two methods must be implemented in a class:
+
+       __iter__(): This method returns the iterator object itself. It's called when an iterator is created.
+ 
+       __next__(): This method returns the next value from the iterator. 
+                  It raises the StopIteration exception when there are no more items to return.
+       
+    Q. return vs yield :
+    
+       return :
+             return is a keyword used to terminate a function and immediately return a value to the caller. 
+             The next time the function is called, it starts from the beginning.
+       	
+       yield :
+             When a function encounters a yield statement, it behaves differently.
+             Instead of exiting the function like return, it temporarily suspends the function's execution 
+             and sends a value back to the caller. However, the function's state is saved, allowing it 
+             to resume from where it left off the next time it's called. 
+             
+       summarize, return is used to exit a function and provide a final value to the caller, 
+       while yield is used to temporarily pause a function's execution and generate a sequence of values as a generator.
+       
+    c)decorator :
+             
+      In Python, a decorator is a design pattern 
+      that allows you to modify the behavior of a function 
+      or class without changing its source code directly. 
+      Decorators are essentially functions that wrap around other functions and modify their behavior in some way.
+
+      A decorator function takes a function or a class as an argument, 
+      and returns a modified version of the original function or class. 
+      The modified version can add extra functionality to the original function, 
+      such as logging, caching, or authorization checks. 
+      Decorators are commonly used in web frameworks, such as Flask and Django, to add functionality to routes and views.
+
+
+      iterator vs generator :
+     
+      iterator uses iter keyword                          
+      generator uses yeild keyword. it saves local vairable value 
+     
+      iterator - memory efficient
+      generator - helps us to write fast and compact code  
+      
+      
+    d) Generator:
+       
+       A generator in Python is a special type of iterator that is used to create and 
+       yield values one at a time, on-the-fly, as they are requested. 
+       Unlike regular functions that compute all their values at once and return them in a single step, 
+       generators generate values lazily, which means they produce values as you iterate over them, 
+       and they save memory by not storing the entire sequence in memory.
+
+       Generators are defined using a special kind of function called a generator function. 
+       You can create a generator function using the yield keyword instead of return. 
+       When the yield statement is encountered in a function, 
+       it returns the value specified after yield to the caller and 
+       suspends the function's state, allowing it to resume from where it left off the next time it's called.
+      
+      
+      example:
+       
+       def generate_ifsc_code():
+	    prefix = "SBIN000"
+	    account_number = 10000
+	    while True:
+		yield f"{prefix}{account_number}"
+		account_number += 1
+
+	gen = generate_ifsc_code()
+
+	acc1 = next(gen)
+	print(acc1)
+
+	acc2 = next(gen)
+	print(acc2)
+    
+18) module,packages,library,Framework
+ans:
+    a) module :
+       
+	A module is a single file containing Python code that defines functions, classes, and variables. 
+	It's used to encapsulate related functionality into a single unit, making it easier to manage and reuse code. 
+	Modules can be imported into other Python programs to use the code they contain.
+
+    b) Packages :
+       Python packages are namespaces containing multiple modules.
+       
+       or 
+       
+       A package is a collection of related Python modules organized in a directory hierarchy. 
+       It includes a special __init__.py file in each directory to mark it as a package. 
+       Packages allow you to group related modules together, creating a logical structure for your codebase. 
+        
+       my_package/
+    	__init__.py
+    	module1.py
+    	module2.py
+    	
+    c) Library :
+       A library is a collection of pre-written code that provides specific functionality to be used by other programs. 
+       Libraries typically consist of modules and packages that address common tasks, 
+       allowing developers to save time and effort by reusing existing code instead of writing everything from scratch.
+
+
+    d) Framework :
+       A framework is a more comprehensive and structured set of tools and libraries 
+       that provides a foundation for building larger applications. 
+       It offers a specific structure and guidelines to follow, often with predefined patterns and conventions. 
+       Frameworks help developers create applications more efficiently by handling common 
+       tasks and providing a scaffold for the application's architecture.
+       
+       
+     Module    : A single file containing code.
+     Package   : A collection of related modules organized in directories.
+     Library   : A collection of modules and packages providing specific functionality.
+     Framework : A structured set of tools and libraries that provide a foundation 
+                 for building applications, often including predefined patterns and guidelines.
+            
+
+19) pickling and unpickling ?
+ans:
+    Pickle module accepts any Python object and 
+    converts it into a string representation and dumps 
+    it into a file by using dump function, this process is called pickling. 
+    While the process of retrieving original Python objects from the stored string representation is called unpickling. 
+     
+     
+20) wht is OOP's?
+    class
+    object vs instance
+    self ?
+    __init__ ?   
+    polymorphism
+    Encapsulations
+    Abstraction
+    Inheritance
+   
+ans:
+    0)object vs instance:
+       Python, "instance" and "object" are often used interchangeably in the context of classes, 
+       but they can carry slightly different connotations depending on the context. 
+       Generally, both terms refer to a concrete realization of a class,
+       
+      1)Object:
+	 An object is an instance of a class.
+         It represents a specific entity or data structure that is created based on the blueprint defined by the class.
+         Objects have attributes (data members) and methods (functions) associated with them, as defined by the class.
+         You can think of an object as a concrete thing that exists in memory.
+         
+      2)Instance:
+
+	An instance is a specific occurrence or realization of a class.
+	It is essentially a synonym for an object in most contexts.
+	You create an instance by calling the class constructor, and it results in the creation of an object.
+	The term "instance" is often used when discussing the specific usage of a class 
+	or when referring to a particular object created from that class.
+        
+        
+    1)class:
+        In Python, a class is a blueprint or a template for creating objects (instances). 
+        It defines a set of attributes (data members) and methods (functions) that the objects created from the class will have. 
+        In other words, a class defines the structure and behavior of objects of that class.    
+        
+        Classes are a fundamental concept in object-oriented programming (OOP) and are used to model real-world entities 
+        and their behaviors in a structured and reusable way. 
+        They allow you to encapsulate data and functions into a single unit, making your code more organized, maintainable, 
+        and easier to extend. You can create multiple objects from the same class, each with its own data, and use them independently. 
+        
+        
+    a)self :
+       The self parameter is a reference to the current instance of the class, 
+       and is used to access variables that belongs to the class.
+       When a method is called on an instance of a class, self refers to that instance.
+
+       (The self variable in the init method refers to the newly created object 
+        while in other methods, it refers to the object whose method was called)
+        
+      work of self:
+       1)in instance method we can access the atrribute(varibale) of the class in instance method
+       2)differentiate the class vairable and local variable 
+       3)Calling Other Methods:
+      
+    NOTE:  each object of class has different copy of the class
+     
+    b)__init__ :
+       __init__ is a method or constructor in Python. 
+       This method is automatically called to allocate memory when a new object/ instance of a class is created. 
+       All classes have the __init__ method.
+     
+    c)polymorphism :
+       It is the  feature OOP's concept  
+       it referce to ability of the objects exit in different
+       python support polymorphism : 
+       it means a class can have 2 mthods with same name but diffrenet  parameters 
+        
+       a) method overloading:
+          it refers to the ability of a class to define multiple methods with the same name but different parameters. 
+          not support traditional method overloading like some other programming languages
+          Python, the last defined method with a particular name will overwrite any previous definitions.
+          
+       b) method overriding:
+          Method overriding is a concept where a subclass provides a specific implementation 
+          for a method that is already defined in its superclass. 
+          This allows the subclass to modify or extend the behavior of the inherited method without changing its name. 
+          
+    d)Encapsulations :
+       this is feature OOP's concept 
+       it is binding the data and code together.
+       we use this feature to secure our data. we access data using methods - setter & getter 
+       class is example of encapsulation. 
+    
+    e)Inheritance :
+       Inheritance allows us to define a class that inherits all the methods and properties from another class. 
+       Parent class is the class being inherited from, also called base class.
+       Child class is the class that inherits from another class, also called derived class.
+     
+    f)Abstraction :
+       It is the  feature OOP's concept  
+       abstraction means hiding the implementation part and showing the information only
+    	
+Q)  MRO ?     
+ans :
+
+
+Q) Diff bet Class Method & Static Method
+ans :
+
+    In Python, both static methods and class methods are used to define methods that are associated 
+    with a class rather than an instance (object) of that class. 
+    However, they serve different purposes and have distinct characteristics:
+    
+    _______________________________________________________________________
+    1) Static Method:
+
+    A static method is defined using the @staticmethod decorator, 
+    and it doesn't receive the instance (self) or class (cls) as its first argument by convention.
+    Static methods are used for methods that do not need access to instance-specific or class-specific data. 
+    They are essentially utility functions related to the class.
+    You can call a static method on the class itself without creating an instance.
+    Static methods are not tied to the class state, so they can't access or modify instance or class attributes directly.
+     
+    
+    example:
+    
+    class MyClass:
+      
+      @staticmethod
+      def static_method():
+         print("This is a static method")
+
+      MyClass.static_method()
+    
+    ___________________________________________________________________________
+    2) Class Method:
+
+    A class method is defined using the @classmethod decorator, and it receives the class itself (cls) as its first argument. 
+    Class methods can also access and modify class-level attributes.
+    Class methods are often used for factory methods or to create alternative constructors for a class.
+    You can call a class method on the class itself or on an instance of the class.
+    
+    Example:
+    
+      class MyClass:
+        class_var = 0
+
+        def __init__(self, instance_var):
+           self.instance_var = instance_var
+
+      @classmethod
+      def class_method(cls):
+         cls.class_var += 1
+         print(f"This is a class method, class_var = {cls.class_var}")
+
+      obj1 = MyClass(1)
+      obj2 = MyClass(2)
+
+      MyClass.class_method()  
+      obj1.class_method()
+    _______________________________________________________________________________________
+
+
+Q)  Instance Method
+ans :
+    An instance method is a method that operates on an instance of a class and can access and modify the instance's attributes. 
+    These methods are defined within the class and take self as the first parameter, which refers to the instance itself.
+     
+Q)  Static Method 
+ans :
+     A static method is a method that belongs to a class rather than an instance of that class. 
+     It can be called without creating an object of the class and does not have access to any instance-level data. 
+     It is typically used to perform operations that don't depend on the state of the instance, 
+     such as utility functions. To define a static method, use the @staticmethod decorator.
+     
+     or 
+     
+     Static methods are methods that belong to a class rather than an instance of the class. 
+     They are associated with the class itself rather than with any specific object or instance of the class. 
+     Static methods can be called on the class itself, and they do not have access to the instance-specific data or attributes. 
+     They are often used for utility functions that don't depend on the state of the object.
+     
+     Use case for static methods:
+     1) Mathematical Operations:
+          Static methods can be useful for creating classes that perform mathematical operations 
+          like addition, subtraction, multiplication, and division. 
+          These methods don't need to maintain any internal state, so they can be made static.
+     
+     2) Factory Methods: 
+          When you want to create objects of a class with different configurations or in a specific way, 
+          you can use static methods as factory methods to create these objects.
+          
+     3) Helper Functions: 
+          Static methods are often used for utility functions or helper functions that are related 
+          to a class but don't need access to instance-specific data. 
+          For example, formatting and validation functions.
+     
+     Static methods provide a way to encapsulate functionality within a class without the need for an instance. 
+     They are often used for functions that are related to the class conceptually but do not rely on specific instance attributes.
+     
+Q)  Dunder Method
+ans :
+
+     Dunder (double underscore) methods, also known as magic methods, 
+     are special methods in Python that allow you to 
+     define how instances of your classes behave in certain situations, 
+     such as arithmetic operations, comparisons, and conversions.
+     
+     OR 
+     
+     Dunder methods, also known as magic methods or special methods, 
+     are a set of predefined methods in Python that allow you to define the behavior of your objects 
+     and enable specific functionalities. 
+     These methods are typically surrounded by double underscores (i.e., "dunder"), such as __init__ or __str__. 
+     Dunder methods are called implicitly in response to certain operations or events in your code.
+     
+     OR
+     
+     Dunder methods, short for "double underscore methods," 
+     are special methods in Python that have names surrounded by double underscores on both sides. 
+     These methods are also referred to as "magic methods" or "special methods." 
+     They provide a way to define behavior for built-in operations on objects of custom classes, 
+     such as addition, subtraction, string representation, comparison, etc. 
+     Dunder methods allow you to customize the behavior of your objects so that 
+     they can seamlessly integrate with Python's built-in functionality and syntax.
+
+     
+21) shallow & deep copy
+ans: 
+     In Python, shallow copy and deep copy are two methods used to create copies of objects. 
+
+    a) Shallow copy: 
+        A shallow copy creates a new object,
+        but does not create new copies of the nested objects within it. 
+        Instead, it creates references to the original nested objects. 
+        You can create a shallow copy using the copy() method  
+        
+    b) Deep copy: 
+        A deep copy creates a new object and also creates new copies of the nested objects within it. 
+        You can create a deep copy using the deepcopy() method from the copy module.
+   
+
+22) file handling 
+ans:
+    
+23) exception handling 
+ans:
+
+24) CALL by value and CALL by reference ? (cv and cr)
+ans: 
+    CV and CR are nothing but 2 kind of  parameter passing technique 
+    
+    ___________________________________________________________
+    
+    a)call by value :
+        in CV you pass the values of the parameter to the function ,
+        if any kind of  change is done to those parameter inside the fucntion those are not reflected back in ur actual paramters
+       
+        example :
+        def modify_value(x):
+          x = 10
+
+        num = 5 
+        modify_value(num)
+        print(num)  # This will still print 5
+       
+    _________________________________________________________
+       
+    b)call by reference :
+        but in case of CR - u just pass the reference to the parameter to ur function 
+        so if u make anykind of changes to the paramter inside fucntion those changes get reflected back to ur actual 
+        parameters
+        
+        exmaple:
+        
+        def modify_list(my_list):
+    	    my_list.append(4)
+            my_list[0] = 99
+
+        numbers = [0, 1, 2, 3]
+        modify_list(numbers)
+        print(numbers)
+    
+    _________________________________________________________
+    
+    SUMMARY:
+    
+        In Python, when you pass an argument to a function, you're effectively passing a reference to the object. 
+        You can modify the object through that reference, 
+        but reassigning the reference itself (as in the second part of the modify_list function) 
+        won't affect the original reference outside the function. This is why it's often described as "call by object reference.
+
+    
+       def modify_list(my_list):
+          my_list.append(4)
+          my_list = [1, 2, 3]
+
+       numbers = [0, 1, 2, 3]
+       modify_list(numbers)
+       print(numbers) 
+       
+    ==================================================================
+
+25) multiprocessing & multithreading ?
+ans :
+
+    Multiprocessing executes many processes simultaneously, 
+    whereas multithreading executes many threads simultaneously.
+      
+    or 
+    
+    Both multiprocessing and multithreading are techniques used in Python to achieve concurrency, 
+    which allows a program to perform multiple tasks in parallel. 
+    However, they achieve this concurrency using different approaches and have different use cases.
+    
+    1. Multiprocessing:
+       Multiprocessing involves running multiple processes in parallel, 
+       where each process has its own separate memory space and Python interpreter. 
+       This is particularly useful for CPU-bound tasks, 
+       where the program's execution is limited by the computational power of the CPU rather than input/output operations.
+    
+    2. Multithreading:
+       Multithreading involves running multiple threads within the same process, 
+       all sharing the same memory space and Python interpreter. 
+       Threads are lighter-weight than processes, but they share the same global interpreter lock (GIL) in CPython, 
+       which makes them suitable for tasks that are I/O-bound or tasks that involve waiting, such as network requests or file I/O.
+       
+    3. Choosing Between Multiprocessing and Multithreading:
+
+       Use multiprocessing when you have CPU-bound tasks that can benefit from parallel execution and 
+       when you want to utilize multiple CPU cores effectively.
+
+       Use multithreading when you have I/O-bound tasks or tasks that involve waiting for external resources, 
+       as it can help avoid blocking the entire process during these waits. 
+       However, remember that Python's GIL limits the parallelism of CPU-bound tasks in multithreaded programs.
+     
+     
+    4) GIL:
+       GIL stands for the "Global Interpreter Lock" in Python. 
+       It is a mutex (or lock) that protects access to Python objects, 
+       preventing multiple native threads from executing Python bytecodes in parallel. 
+       In simpler terms, the GIL is a mechanism that ensures only one thread executes Python code at a time, 
+       even on multi-core processors.
+
+    Here are some key points about the GIL in Python:
+
+    Single-Threaded Python Execution: Due to the GIL, 
+    Python threads cannot fully utilize multi-core processors for CPU-bound tasks. 
+    This means that even if you create multiple threads in a Python program, 
+    only one thread can execute Python code at any given time.
+
+    GIL and I/O Operations: The GIL is released during I/O operations (such as file reading or network communication). 
+    This allows multiple threads to perform I/O-bound tasks concurrently.
+
+    Impact on CPU-Bound Tasks: CPU-bound tasks, which involve significant computation, 
+    may not benefit from multi-threading in Python due to the GIL. 
+    In such cases, using multiprocessing or other concurrency techniques 
+    (e.g., asynchronous programming with asyncio) can be more effective.
+
+    Cython and C Extensions: Code written in C or extensions written in C/C++ can release the GIL, 
+    allowing multi-threaded execution of Python code within those extensions. 
+    This is why certain Python libraries or functions can take advantage of multiple cores.
+
+    Concurrency vs. Parallelism: The GIL primarily impacts parallelism 
+    (concurrent execution of threads on multiple CPU cores).   
+     Concurrency (managing multiple tasks and switching between them) can still be achieved with threads in Python, even with the GIL.
+ 
+    Python Versions: The GIL exists in CPython, which is the reference implementation of Python. 
+    Other Python implementations like Jython (Python on the Java Virtual Machine) 
+    or IronPython (Python on the .NET Framework) do not have a GIL.
+
+
+26) Thread ?
+ans :
+    In Python, a thread refers to a separate flow of execution within a program. 
+    Threads allow a program to perform multiple tasks concurrently, 
+    by dividing the program into smaller independent parts that can run simultaneously.
+
+    To use threads in Python, you can use the built-in threading module. 
+    This module provides a Thread class, which represents a separate thread of execution. 
+    You can create a new thread by creating an instance of the Thread class and passing a function to it as the target.
+
+27) context manager ?
+ans :
+    In Python, a context manager is an object that is used to manage resources, 
+    such as files, network connections, or locks, by defining the setup and 
+    tear-down operations to be performed when entering and exiting a block of code. 
+    The with statement is used to interact with a context manager.
+    
+    2) with statement:
+
+    The with statement in Python is designed to simplify the management of resources, such as files, network connections, 
+    or database connections, that need to be explicitly opened and closed. 
+    It provides a more concise and safer way to work with such resources by encapsulating the setup and 
+    teardown operations within a single block of code.
+
+    The primary benefit of using the with statement is that it ensures that resources are properly managed and released, 
+    even in the presence of exceptions or errors. It automatically takes care of cleaning up 
+    resources once they're no longer needed, regardless of whether the block of code is exited normally or due to an exception.
+
+    with resource_manager as resource:
+    # Code that uses the resource
+    Here, resource_manager is an object that manages the resource, and resource is the resource itself. 
+    The with block automatically calls the appropriate methods (such as opening and closing a file) on the resource manager, 
+    making sure that resources are released properly.
+
+    For example, when working with files, the with statement simplifies file handling like this:
+    with open('file.txt', 'r') as file:
+    content = file.read()
+    
+    This eliminates the need to explicitly close the file using file.close() and helps prevent resource leaks and other common issues.
+
+    In summary, :
+        the with statement is designed to enhance code readability, maintainability, 
+        and reliability when dealing with resources that require proper setup and cleanup. 
+        It's a recommended practice for working with resources that support context management in Python.
+     
+
+28) Closures ?
+ans : 
+    In Python, you can define functions within functions i.e. nested. 
+    Python Closures are these inner functions enclosed within the outer function. 
+     
+    Closures in Python are the inner functions that have access to variables 
+    declared/initialized inside an outer function (enclosing function)even after 
+    the outer function has been executed completely or removed from the memory
+    
+    
+Advance quetions :
+
+30) Explain 'Everything in Python is an object.
+ans :
+    In object-oriented programming languages like Python, 
+    an object is an entity that contains data along with associated metadata and/or functionality. 
+    In Python everything is an object, which means every entity has some metadata (called attributes) 
+    and associated functionality (called methods)  
+    
+    It means that almost everything that you use:
+    is an instance of a class & has attributes
+    When you define a variable, Python creates a pointer to an object in memory. 
+    This object is an instance of a class.
+    
+    or 
+    
+    The statement "Everything in Python is an object" is accurate because Python implements a 
+    strict object-oriented programming model. In Python, everything, including values, functions, classes, 
+    and modules, is represented and manipulated as objects. This means that every entity in Python has attributes and methods, 
+    and you can work with them in a consistent manner, adhering to the principles of object-oriented programming. 
+    
+    or 
+
+    The statement "Everything in Python is an object" is accurate because Python implements 
+    a strict object-oriented programming model.    
+    In Python, everything, including values, functions, classes, and modules, is represented and manipulated as objects. 
+    This means that every entity in Python has attributes and methods,
+    and you can work with them in a consistent manner, adhering to the principles of object-oriented programming. 
+    
+    
+31) What is mutable and immutable objects/data types in Python?
+ans :
+    Immutable objects are those whose values cannot be changed once they are created. 
+    Examples of immutable objects in Python include integers, floats, booleans, strings, 
+    and tuples. When you perform an operation on an immutable object that would normally 
+    change its value (e.g. appending to a string), a new object is created with the 
+    modified value, rather than modifying the original object in place.
+
+    Mutable objects, on the other hand, are those whose values can be changed after 
+    they are created. Examples of mutable objects in Python include lists, 
+    dictionaries, and sets. When you perform an operation on a mutable object 
+    that would normally change its value (e.g. appending to a list), the original object is modified in place. 
+    
+    
+32) Explain Generators and use case of it.
+ans : 
+    Generators can be useful in situations where you need to generate a large number of values on-the-fly, 
+    but don't want to store them all in memory at once. 
+    This can be especially useful when working with large datasets or 
+    when dealing with an infinite sequence of values (like the Fibonacci sequence).
+
+    Other use cases of generators include:
+    Processing large files or datasets that don't fit into memory.
+    Generating an infinite sequence of values.
+    Implementing lazy evaluation, which defers the evaluation of an expression until its value is needed.
+    Implementing pipelines for data processing, where the output of one generator is used as the input of another generator.
+
+   
+33) Explain Decorators and use case of it
+ans :
+    In Python, decorators are a way to modify or 
+    extend the behavior of a function or a class without modifying its source code. 
+    Decorators are essentially functions that take another function as an argument 
+    and return a new function that includes the behavior 
+    of the original function plus the additional behavior provided by the decorator.
+
+    Decorators are typically used to add functionality to a function or a class, such as logging, caching, or authentication
+
+
+34) What is MRO in Python? How does it work?
+ans :
+    MRO is a concept used in inheritance. It is the order in which a method is searched for in a classes hierarchy
+    
+35) What is monkey patching? How to use it in Python?
+ans :
+    Monkey patching is a technique in Python that allows you to dynamically modify or 
+    extend the behavior of existing code at runtime, without changing its source code. 
+    This is achieved by modifying the attributes or methods of existing objects or classes.
+
+    In Python, everything is an object, including functions, classes, and modules. 
+    This means that you can modify their attributes and methods at runtime, even after they have been defined or imported.
+
+    ex:
+    
+    class MyClass:
+    	def my_method(self):
+    	    print("Original method called")
+
+    def new_method(self):
+    	print("New method called")
+
+    obj = MyClass()
+    obj.my_method() # Output: Original method called
+
+    MyClass.my_method = new_method
+    obj.my_method()
+    
+    Monkey patching can be useful in situations 
+    where you need to modify the behavior of existing code that you don't have control over, or 
+    where it's not practical to modify the source code directly. 
+    However, monkey patching can also be risky and can lead to unexpected behavior or bugs, 
+    so it should be used with caution and only when necessary.
+     
+     
+36) What is the difference between staticmethod and classmethod?
+ans :
+    In Python, a classmethod is a special method that is bound to the class and 
+    not the instance of the class. 
+    This means that it can be called on the class itself, 
+    rather than on an instance of the class. The classmethod is defined using the @classmethod decorator.
+    
+    
+    class MyClass:
+	 x = 0
+
+	 def __init__(self):
+	     MyClass.x += 1
+
+	 @classmethod
+	 def class_method(cls):
+	     print("The value of x is:", cls.x)
+
+    obj1 = MyClass()
+    obj2 = MyClass()
+
+    MyClass.class_method() # Output: The value of x is: 2
+    
+    
+    Use cases for classmethod include:
+
+    1)Alternative constructors: classmethod can be used to create alternative constructors for a class. 
+    For example, the datetime module in Python has a fromtimestamp() 
+    method that creates a datetime object from a Unix timestamp.
+
+    2)Factory methods: classmethod can be used to create factory methods that create 
+    and return instances of a class based on certain criteria or conditions.
+
+    3)Class-level data access: classmethod can be used to access 
+    and modify class-level data, such as class variables, without the need for an instance of the class.
+
+    4)Class-level utility methods: classmethod can be used to define utility methods 
+    that are related to the class as a whole, rather than to a specific instance of the class.
+
+
+37) Which is faster, list comprehension or for loop?
+ans :
+
+     In Python, whether list comprehensions or traditional for loops are 
+     faster depends on the specific use case and the size of the data you are working with. 
+     In general, list comprehensions are often faster and more efficient for creating new 
+     lists from existing iterables when compared to equivalent for loops.
+     
+     List comprehension :
+     it is a concise and powerful way to create lists in Python. 
+     It allows you to define and create lists based on existing lists or other iterable objects using a single line of code. 
+     List comprehensions are compact and readable, making code more expressive and reducing the need for traditional loops.
+    
+38) Explain Meta Classes in Python.
+ans :
+
+    In Python, everything is an object, including classes. 
+    A meta class is a class that defines the behavior of other classes, 
+    similar to how a class defines the behavior of its instances. 
+    A meta class can be used to define a custom way in which a class is created and/or its behavior is modified.
+
+    In Python, the default meta class is the type class, which is responsible for creating new classes. 
+    However, it is possible to define custom meta classes by creating a new class that inherits from type.
+    
+    Metaclasses are often used for advanced customization and to 
+    enforce coding standards, design patterns, or specific behavior across multiple classes.
+    
+    
+    What Is a Metaclass?:
+
+    In Python, everything is an object, including classes. 
+    A metaclass is a class of a class. It defines how classes themselves behave, such as their creation, attributes, and methods.
+    
+    
+39) Explain Abstract Classes and its uses.
+ans :
+     we use abstract class when there are some common feature shared by all the objects as they are.
+     python provides abc module to work with abstraction
+     abstract method has empty body(cant be implementaion in where place where it is created)
+     we use @abstractmethod decorator to define abstract method.
+     in case of common action different implementaion
+     
+     
+     from abc import ABC,abstractmethod
+     
+     class Car(ABC):
+         def Show(self):
+             print("every car has 4 wheels")
+             
+          @abstractmethod
+          def Speed(self):
+              pass
+              
+     class Maruti(Car):
+          def Speed(self):
+          
+          
+    or 
+    
+    
+    Abstract classes are classes in object-oriented programming that cannot 
+    be instantiated on their own but serve as templates for other classes 
+    that can be instantiated. Abstract classes are used to define a common 
+    interface or set of methods that must be implemented by their subclasses. 
+    In other words, an abstract class defines a contract for its subclasses to follow. 
+    Any subclass of an abstract class must implement 
+    all of the abstract methods defined in the parent class, or it will also be considered an abstract class.
+
+    Abstract classes are often used in large, complex systems 
+    where multiple classes need to share a common set of methods and properties. 
+    By defining these methods and properties in an abstract class, 
+    you can ensure that they are implemented consistently across all subclasses, 
+    which makes the code easier to maintain and extend.
+          
+
+40) Super Method:
+ans :
+    The super keyword refers to superclass (parent) objects. 
+    It is used to call superclass methods, and to access the superclass constructor. 
+    The super() function returns an object that represents the parent class.
+    The super function returns a temporary object of the superclass that allows access to all of its methods to its child class
+        
+
+41) Inheritance:
+ans :
+    Inheritance is a mechanism by which a class derives (or inherits) 
+    attributes and behaviors from another class without needing to implement them again.   
+ 
+
+   
+42) Explain shallow and deep copy in Python
+ans :
+     
+     In Python, objects can be copied using either a shallow copy or a deep copy. 
+     The difference between the two types of copies lies in how deeply the object is copied and 
+     whether the copy is a reference to the original object or a new object with its own memory allocation.
+
+     A) Shallow Copy:
+     	A shallow copy creates a new object that is a reference to the original object, 
+     	but with the contents copied. This means that changes made to the original 
+    	object will be reflected in the copy, and vice versa. Shallow copying is performed using the copy() method.
+    	
+     B) Deep Copy:
+        On the other hand, a deep copy creates a new object that is a copy of the original object, 
+        with its own memory allocation. This means that changes made to the original 
+        object will not be reflected in the copy, and vice versa. 
+        Deep copying is performed using the deepcopy() method from the copy module.
+
+42) What is an iterator? How is iterator is different from a generator?
+ans :
+     An iterator is an object in Python that allows you to traverse a sequence of values, 
+     one at a time, without having to load the entire sequence into memory at once. 
+     The built-in iter() function is used to create an iterator object from an iterable, such as a list or a string. 
+     The iterator provides two methods: __next__() and __iter__(). The __next__() method returns the next value in the sequence, 
+     and the __iter__() method returns the iterator object itself.
+     
+     Generator:
+     A generator, on the other hand, is a special type of iterator 
+     that is defined using a function that uses the yield keyword instead 
+     of the return keyword. A generator allows you to generate a sequence 
+     of values on the fly, without having to generate the entire sequence at once. 
+     Each time the yield statement is encountered, the function suspends its execution 
+     and returns the yielded value. When the function is called again, 
+     execution resumes where it left off, until the next yield statement is encountered.
+     
+     
+     This code defines a generator function my_generator() that yields a sequence of values. 
+     The for loop is used to iterate over the generator, and each yielded value is printed to the console.
+
+     The main difference between an iterator and a generator is that an 
+     iterator is an object that implements the iterator protocol,
+     while a generator is a function that returns an iterator. 
+     Iterators can be implemented in a variety of ways,
+     while generators are always implemented as functions that use the yield keyword.
+
+     Another important difference is that iterators can only be used to traverse a sequence of values, 
+     while generators can be used to generate values on the fly. 
+     Generators are particularly useful when you need to generate a large sequence of values 
+     that can't be stored in memory all at once, or when you need to generate 
+     a sequence of values based on some complex algorithm or external input.
+     
+     
+     So, in summary, iterables are objects that can be looped over,
+     and iterators are objects that keep track of the current position 
+     in the sequence and return the next value when the __next__() method is called.
+     
+     
+43) What is __init__?
+ans :
+
+     __init__ is a special method in Python that is automatically called 
+     when an object is created from a class. It is used to initialize 
+     the instance variables of the object to their default values. 
+     __init__ is also called a constructor method, 
+     as it is responsible for constructing the object and setting its initial state.
+     
+  
+44) What is self
+ans :
+    In Python, self is a reference to the instance of the class that a method belongs to. 
+    
+    (note : object is first parameter in methods hence we write self  
+    first parameter to the method is object itself hence we write self)
+    
+45) What's the difference between is and == 
+ans :
+    
+    In Python, == is used to check if two objects have the same value, 
+    while is used to check if two objects are the same object in memory.
+    
+46) Differentiate remove, del, and pop in python?
+ans :
+
+    a) remove(value)    - is a list method that removes the first occurrence of a given element from the list.
+    b) del (index) - is a statement in Python that can be used to delete a element of list or a slice of a list or entire list. 
+    c) pop(index) is a list method that removes and returns the element at a given index.
+    
+47) Difference between iterables and iterators?
+ans : 
+    In Python, an iterable is any object that can return an iterator, 
+    while an iterator is an object that implements the __next__() method and returns the next value in a sequence.
+    
+48) Difference between != and is not operator in python?
+ans :
+    
+    
+49) What are the advantages of NumPy array over regular Python lists?
+ans :
+    
+50) What is monkey patching in Python?
+ans :
+
+51) How to mock in pytest
+ans :
+
+52) What will append() and extend methods do
+ans :
+ 
+53) What are *args and **kwargs in Python functions
+ans :
+   
+54) What do you understand by abstraction?
+ans :
+    Abstraction is the process of simplifying complex systems or objects by focusing on their essential properties 
+    and behaviors while hiding the unnecessary details. It provides a high-level view of an object or system.
+
+55) What is Encapsulation?
+ans : 
+     
+    Encapsulation is the concept of bundling an object's state (attributes) and behavior (methods) into a single unit, 
+    i.e., a class. It restricts direct access to an object's internal data by providing access control mechanisms 
+    like public, protected, and private attributes/methods.
+    
+    or
+   
+    Encapsulation is one of the fundamental principles of object-oriented programming (OOP) 
+    that describes the process of hiding internal implementation details of an object 
+    from the outside world and providing a public interface for accessing and manipulating the object's state.
+    
+    Encapsulation helps to ensure that the object's internal state is not accidentally 
+    modified or corrupted from outside the object, and it allows for greater 
+    flexibility in the implementation of the object's behavior.
+    
+    In Python, encapsulation is typically achieved through the use of access modifiers 
+    such as private, protected, and public methods and variables. Private methods 
+    and variables are denoted by a double underscore prefix, 
+    while protected methods and variables are denoted by a single underscore prefix. 
+    Public methods and variables have no prefix.
+    
+    By using access modifiers to restrict access to an object's internal state, 
+    encapsulation provides a way to ensure that the object is used only in the intended manner, 
+    and it makes it easier to modify the implementation of the object's behavior without affecting other parts of the program.
+
+    Overall, encapsulation is an important concept in object-oriented programming 
+    that promotes modular and reusable code by protecting an object's 
+    internal state and providing a well-defined public interface for accessing and manipulating that state.
+    
+Q . error and an exception diff :
+ans :
+
+     the key difference between an error and an exception is that an error is a generic term that refers 
+     to any unexpected or undesirable situation that occurs during program execution, 
+     while an exception is a specific type of error that occurs due to a specific
+     event during program execution and requires an exception handler to handle it.
+     
+     Errors are the problems in a program due to which the program will stop the execution. 
+     On the other hand, exceptions are raised when some internal events occur which changes the normal flow of the program. 
+     
+     Two types of Error occurs in python. 
+ 
+     1)Syntax errors
+     2)Logical errors (Exceptions) 
+     
+     #error vs exception:
+     
+     an exeception is an error that can be handled by a programmer 
+     an exeception which are not handled by programmer, becomes an error 
+     all exceptions occur only at runtime 
+     error may occur at compile time or runtime
+     
+           
+============================================================================================================================
+
+
+# DJANGO #
+
+
+1)  what is Django?
+ans :
+    Django is high level free and open source web application framework based on python.
+    web applications quickly and easily. 
+    It provides a robust set of tools and libraries that help developers to create scalable and secure web applications.
+    which follows MVT design pattern  which separate application in 3 distinct components 
+    where model represent the database schema,
+    view handle the business logic, template handle presentation layer
+    Django comes with a built-in administrative interface, which makes it easy to manage the application's data and content. 
+    It also supports third-party plugins and modules, which can extend its functionality further. 
+
+
+2)  explain Django Architecture
+ans:
+    which follows MVT design pattern  which separate application in 3 distinct components 
+    where
+    a)model: represent the database schema & responsible for managing the application's data,
+    view handle the business logic, template handle presentation layer
+    b)view : 
+
+
+    In the MVT architecture, the Controller component is replaced by the URL Dispatcher, 
+    which maps URLs to View functions. When a user requests a URL, 
+    the URL Dispatcher finds the appropriate View function and passes the request to it. 
+    The View function then retrieves the necessary data from the Model component, processes it, 
+    and passes it to the Template component for rendering.
+
+
+3)  what is MVT and MCV?
+ans:
+    both software design architecture 
+
+    1. Model View Controller (MVC) : 
+    It is a software design pattern that is used to implement user interfaces and 
+    gives emphasis on separating data representation from the components which interact and process the data. 
+    It has 3 components and each component has a specific purpose:  
+
+    Model :This Model is the central component of this architecture and manages the data,
+     logic as well as other constraints of the application.
+    Views : The View deals with how the data will be displayed to the user and provides various data representation components.
+    Controller :The Controller manipulates the Model and renders the view by acting as a bridge between both of them. 
+
+
+4)  what is django directory structure?
+ans:
+    School(project folder)
+       |_   __init__.py
+       |_   asgi.py
+       |_   settings.py
+       |_   urls.py
+       |_   wsgi.py     
+
+    manage.py (file)
+
+
+5)  what are urls, view, template, models
+ans:
+
+   a)URLs (Uniform Resource Locators):
+       -URLs in Django define the routes or paths that map to specific views (functions) in your application. 
+        They determine how a user's request is handled.
+        
+       -URLs are defined in the urls.py file of each Django app. 
+        They use regular expressions to match patterns in the requested URL and direct them to the appropriate view.
+      
+   b)Models:   
+        Models are the data access layer of your application. 
+        Every Django application gets a models.py file by default to create database tables.
+        Django uses ORM (Object Relational Mapping) that allows us to perform database operations 
+        without writing SQL queries but with simple python objects.
+        models is a module that packs the definitions for Model classes, 
+        different models fields, field options and field relationships.
+       
+   c)Views:
+       -Views are Python functions or classes that receive web requests and return web responses. 
+        They contain the logic that processes the user's request.
+         
+       -Views interact with models (if necessary) to retrieve or manipulate data, 
+        and then render HTML templates to generate the final response.
+        
+   d)Templates:
+       Templates in Django are HTML files that define the structure and presentation of the web pages. 
+       They can include placeholders (template variables) that get filled with data from views.
+       Django uses a powerful template engine, typically Jinja2, to render templates.
+   
+
+6)  diff between project & app
+ans: 
+    project is entire django application 
+    app is module inside project
+
+7)  static files in django
+ans: 
+    In Django, static files are any files that are served directly by the web server, 
+    without any processing by the application server. 
+    Examples of static files include images, CSS files, JavaScript files, 
+    and other files that are required by the application's front-end.
+
+    Django provides a built-in system for managing static files,
+    which makes it easy to serve these files from the application. 
+    The static files are typically located in a directory called "static" within each Django application.
+   
+8)  different model inheritance style in django?
+ans: 
+    A)Abstract base classes:
+        This style is used when you only want One class to hold common info that instead of repeating in every model 
+        No table is created for this inheritance
+        
+        or 
+        
+        -Abstract base classes are used when you want to define a base model that includes 
+           common fields and methods but should not be instantiated as a standalone database table.
+        -They are created by subclassing models.Model and adding the abstract = True option to the model's Meta class. 
+           Abstract base classes are not meant to be used for database queries.
+        -Child models that inherit from an abstract base class inherit its fields and methods.
+
+    B)Multi-table inheritance:
+        this normal class inheritance both table have their table 
+        
+        -Multi-table inheritance is used when you want to create a hierarchy of models 
+          where each child model corresponds to its own database table.
+        -Child models inherit all the fields and methods from their parent model. 
+          Django creates a one-to-one relationship between the parent and child models.
+        -Each model has its own table with its fields, and they are linked via a shared primary key.
+
+    C)Proxy models:
+        This style is used, if you only want to modify the Python level behaviour of the model, without changing the model’s fields.
+        It is a type of model inheritance without creating a new table in Database. 
+        It always query on original model with overridden methods or managers.
+        
+        or 
+        
+        -Proxy models are used when you want to create a new model that 
+          has the same fields as an existing model but with different behaviors or methods.
+        -Proxy models do not create new database tables; they reuse the database table of the parent model.
+        -You can use proxy models to extend or modify the behavior of an existing model without altering its database schema.
+
+
+
+9)  Model relationship in django
+ans: 
+    a)OneToOne :
+        each instance of one model is associated with exactly one instance of another model.
+     
+    b)Foreign key (many to one):
+        each instance of one model is associated with zero, one, or many instances of another model.
+
+    c)ManyToMany :
+        each instance of one model can be associated with zero, one, or many instances of another model, and vice versa.
+
+
+10) what are signal, session, middleware?
+ans: 
+    A)Signal :
+        Django signals are a great way of communicating between your apps.
+        Django provides a mechanism to send and 
+        receive messages between different parts of an application, called the ‘signal dispatcher’.
+        There are two key concepts: the Signal and the Receiver.
+        
+        Signals:
+        A Signal is an object corresponding to a particular event
+    
+        Receiver:
+        Receivers are callables that are connected to a particular signal. 
+        When the signal sends its message, each connected receiver gets called.
+        
+        Those are the basics of the signals dispatcher. 
+        You have signals and receivers, the receivers can connect to the signals, 
+        and the signals send messages to any connected receivers  
+        
+     OR
+        
+        In Django, signals are a mechanism for allowing various parts of your application to 
+        communicate with each other in a decoupled manner. 
+        They provide a way for certain senders to notify a set of receivers that some action has taken place, 
+        allowing decoupled applications to get notified when certain events occur elsewhere in the application.
+
+        Here are some key concepts related to signals in Django:
+
+        1)Sender: 
+           A sender is an object that sends a signal. In Django, the sender is usually a model class or an instance of a model.
+
+        2)Signal: 
+           A signal is a simple Python object that represents a particular event. 
+           It is an instance of the django.dispatch.Signal class.
+
+        3)Receiver: 
+           A receiver is a Python function (or method) that gets called when a signal is sent. 
+           Receivers are registered to listen to specific signals and respond to them.
+
+        4)Connecting Signals: 
+           You can connect receivers to signals using the @receiver decorator or the signal.connect() method. 
+           This specifies which function should be called when the signal is sent.
+         
+        types: 
+        1)pre_save/post_save: This signal works before/after the method save().
+        2)pre_delete/post_delete: This signal works before after delete a model's instance (method delete()) this signal is thrown.
+        3)pre_init/post_init: This signal is thrown before/after instantiating a model (__init__() method).
+        
+        Custom Signals: 
+            You can also create custom signals and connect them to specific parts of your application. 
+            For example, you might create a custom signal to notify subscribers when a new article is published.
+        
+        Built-in Signals: 
+            Django provides several built-in signals for various purposes, 
+            such as authentication (user_logged_in, user_logged_out), 
+            request/response handling (request_started, request_finished), and more.
+
+    B)Session : 
+        In Django, sessions are a way to store and retrieve data across multiple requests. 
+        A session is a dictionary-like object that can be used to store arbitrary data that needs to persist across requests.
+        When a user first visits a Django-powered website, the server creates a unique session ID for that user. 
+        This ID is typically stored in a cookie on the user's browser.
+         Any data that is stored in the session is associated with this session ID.
+        To use sessions in Django, you must first enable session support in your project's settings:
+        Django uses session middleware to handle sessions. This middleware is enabled by default in Django projects.
+           
+    or 
+        Session in Django is a mechanism to store small information on the server-side during the interaction with 
+        the Django web application. Session information gets stored in the database and allows for cache-based or file-based sessions. 
+        Django Session is implemented by the middleware and session app mentioned.
+        
+    C)Middleware :
+        Middleware in Django is a set of components that process HTTP requests and responses. 
+        Middleware sits between the web server and the view, allowing you to add extra functionality to your application.
+        Each middleware component can modify the request, the response, or both.
+        It can be used for a wide range of purposes, such as authentication, security, logging, and more.
+
+        Some common use cases for middleware include:
+        Authentication: Middleware can check if a user is authenticated and redirect them to a login page if necessary.   
+        
+        You can also create your own custom middleware by defining a 
+        Python class that implements the appropriate methods, such as process_request, process_response, and process_exception.
+        caching technique ? 
+                
+        Examples of Middleware:
+           -Authentication Middleware 
+           -Security Middleware
+           -Logging Middleware
+           -Compression Middleware
+           -Caching Middleware
+           
+           
+11) Difference between select_related and prefetch_related?
+ans:
+
+    Select_related :
+    With a select_related, your join happens in the database and you only suffer one database query.
+    involve foreign key relationships
+
+
+    Prefetch_related :
+    With prefetch_related, you will be executing two queries and then the results will be 'joined' 
+    by the ORM so you can still type object
+    involve many-to-many and reverse foreign key relationships. 
+
+    or 
+
+    select_related and prefetch_related are two methods in Django's ORM 
+    that can be used to optimize database queries and reduce the number of database hits.
+    
+    exmaple :
+
+    class Author(models.Model):
+        name = models.CharField(max_length=100)
+
+    class Book(models.Model):
+        title = models.CharField(max_length=100)
+        author = models.ForeignKey(Author, on_delete=models.CASCADE)
+
+    Q =To fetch all the books along with their authors, we can use select_related like this:
+    books = Book.objects.select_related('author')
+
+    This will result in a single SQL query that joins the Book and Author tables, and fetches all the fields.
+
+Q . select_related and prefetch_related :
+ans :
+    In Django, select_related and prefetch_related are query optimization techniques 
+    provided by the ORM (Object-Relational Mapping) to optimize database queries 
+    and reduce the number of database hits when retrieving related objects 
+    and working with ForeignKey and OneToOneField relationships 
+    and avoid N+1 query problem
+    
+
+    a)select_related:
+
+    select_related is used to retrieve related objects in a single query using JOINs. 
+    It follows foreign key relationships and retrieves related objects in the same database query as the original object.
+    By using select_related, you can avoid additional queries for accessing related objects, which can improve performance.
+    select_related works for one-to-one and many-to-one relationships (ForeignKey fields).
+    
+    
+    b)prefetch_related:
+
+    prefetch_related is used to retrieve related objects efficiently by reducing the number of database hits through separate queries.
+    It fetches the related objects using a separate query or multiple queries (depending on the relationship) 
+    and caches the results, which can improve performance when accessing related objects later.
+    prefetch_related works for many-to-many and reverse foreign key relationships.
+    
+    c)N+1 Problem:
+    
+       The N+1 query problem is a common issue in Object-Relational Mapping (ORM) frameworks like Django, SQLAlchemy, and Hibernate. 
+       It occurs when you fetch a collection of objects (e.g., a list of records from a database table) and then, 
+       for each object in the collection, you issue additional queries to retrieve related data. 
+       This results in a large number of queries being executed, which can be highly inefficient.
+
+       To address the N+1 query problem, you should aim to minimize the number of database queries 
+       by using techniques such as eager loading and prefetching. 
+       In Django, you can use the select_related() and prefetch_related() methods to optimize your queries.
+       
+       
+       *prefetch_related(): 
+         Use prefetch_related() for ManyToManyField and reverse ForeignKey relationships. 
+         It performs a separate lookup for each relationship and does a "join" in Python. 
+         This is especially useful when you need to retrieve multiple related objects for each item in the main queryset.
+         
+       *select_related():
+         Use select_related() to perform a SQL join and retrieve related objects within the same query
+         This is suitable for ForeignKey and OneToOneField relationships.
+
+12) explain authentication system in django 
+ans:
+
+    Django provides a built-in authentication system that allows developers to easily handle user authentication and authorization. 
+    The authentication system consists of three main components: authentication backends, user models, and authentication views.
+
+    A)Authentication Backends:
+        Authentication backends are responsible for verifying the credentials of a user attempting to log in. 
+        Django includes several authentication backends, 
+        including the default ModelBackend which authenticates against the database user model.
+
+    B)User Models:
+        A user model is a database table that stores user information, such as their username, email, and password. 
+        Django provides a built-in user model called User, 
+        which can be customized to include additional fields or replaced with a custom user model.
+
+    C)Authentication Views:
+        Authentication views are responsible for handling user authentication and authorization.
+        Django includes several authentication views, including login and logout views, 
+        password reset views, and user registration views.
+
+    To use Django's authentication system, you need to add the authentication middleware and URLs to your project settings. 
+    You can then use the built-in authentication views or create your own custom views to handle user authentication and authorization.
+    Overall, the authentication system in Django provides a secure and customizable way to 
+    handle user authentication and authorization for web applications.
+
+13) Importance of settings.py
+
+14) what is ORM?
+ans: 
+    The Django ORM allows developers to define database models as Python classes, 
+    which can be used to create, read, update, and delete data from a database. 
+    Each model class maps to a table in the database, and the class attributes define the fields of the table
+
+15) django response cycle.
+ans: 
+    The response cycle in Django refers to the process of handling a client's request and generating a response
+     
+
+16) HTTP methods/headers
+ans:
+    
+    
+17) what is migrate 
+ans: 
+
+
+18) what is cookie 
+ans : 
+    A cookie in Django is a small piece of data that is stored by a web browser and 
+    sent back to the server with each subsequent request. 
+    Cookies are often used to store information about a user's session, 
+    such as their login status or preferences, and can be used to personalize a user's experience on a website.
+
+20) mixin ?
+21) primary key, foreign key ?
+    Table Relationship 
+
+Q . Django model:
+ans :
+    Models are the data access layer of your application. 
+    Every Django application gets a models.py file by default to create database tables.
+    Django uses ORM (Object Relational Mapping) that allows us to perform database operations 
+    without writing SQL queries but with simple python objects.
+    models is a module that packs the definitions for Model classes, different models fields, field options and field relationships.
+
+21) Model manager:
+ans: 
+    A Manager is the interface through which database query operations are provided to Django models.
+    At least one Manager exists for every model in a Django application. objects is default manager
+    there are 2 purposes we  overwirte or write custom manager:
+    i)to add extra manager method  and ii) to modify the initial QuerySet the Manager returns.  
+    we can write multiple manager to one model.
+    
+
+22) What is WSGI and UWSGI?
+ans :
+    WSGI (Web Server Gateway Interface) is a standard interface between 
+    web servers and Python web applications or frameworks. 
+    It defines a set of rules for how a web server should communicate with 
+    a Python application, allowing for more flexibility and easier integration of different web servers and frameworks.
+
+    UWSGI (pronounced "you-wiz-gee") is a software application server, 
+    often used to run Python web applications, that implements the WSGI protocol. 
+    It can handle multiple requests simultaneously and provides many features 
+    and optimizations for running Python web applications, such as load balancing, caching, and process management.
+
+    In simpler terms, WSGI is a standard interface for Python web applications, 
+    while UWSGI is a specific implementation of that interface that provides additional features for running those applications.
+
+23) What is Mixin?
+ans :
+    In Django, a Mixin is a class that provides additional functionality 
+    to a view or model class by adding methods or attributes without 
+    modifying the original class. Mixins are used to promote code reuse and help keep code organized and maintainable.
+
+24) Difference between class based and function based views?
+ans :
+   
+ 
+25) Can we write a custom queryset in dango? How?
+ans :
+    Yes, in Django you can define custom querysets for your models. 
+    A queryset is a collection of model instances that can be filtered, 
+    ordered, and sliced. Defining custom querysets allows you to encapsulate common queries and reuse them throughout your project.
+    
+
+26) What is Model Manager?
+ans :
+
+    In Django, a model manager is an interface through which you interact with your database. 
+    It provides a level of abstraction between your code and the database by encapsulating common database queries and operations.
+
+    Every Django model has a default manager, which is an instance of the models.Manager class. 
+    This manager provides methods to perform common database operations like creating, updating, deleting, and querying model instances.
+
+    You can also define custom managers for your models by subclassing the models.Manager class. 
+    This allows you to add custom methods that encapsulate common queries or operations on your model instances.
+    
+
+27) Q lookup ?
+ans : 
+     In Django, the Q object is used to build complex database queries with logical OR and AND conditions. 
+     It allows you to combine multiple queries using logical operators like | (OR) and & (AND) 
+     to build complex queries that can't be expressed using a single filter.
+    
+    
+28) F expression ?
+ans :
+    In Django, an F expression is used to refer to a model field or annotation value in a database query. 
+    It allows you to perform database operations using the values of database fields, 
+    and can be used to avoid round-trip database queries when updating or referencing related fields.
+    
+    OR 
+    
+    The F expression in Django provides a way to refer to a model field's value directly in database operations. 
+    It allows you to perform operations and comparisons using the field's value without retrieving the data in Python.
+    
+    ou can also use F expressions in filtering and annotation operations to perform queries based 
+    on field values or calculate values dynamically. 
+    It provides a powerful way to work with data directly in the database, making your queries more efficient and concise.
+    
+    ex. 
+       Book.objects.all().update(price=F('price') * 1.1)
+    
+    or 
+    The F() expression in Django is a powerful tool for working with database fields, 
+    allowing you to perform updates and calculations directly within the database, 
+    which can improve performance and maintain data consistency.
+    
+    OR 
+    
+    In Django, F() expressions allow you to perform database operations 
+    using the values of database fields directly within a query. 
+    They are used to create more efficient and complex database queries.
+    
+    With F() expressions, you can perform the update directly in the database without loading all objects into memory
+    
+29) Multiple Database setup:
+ans :
+    
+30) django connection pooling postgres
+ans :
+    In Django, you can use a third-party library called django-db-connection-pool 
+    to enable connection pooling for PostgreSQL databases.
+    Connection pooling allows you to reuse database connections instead of 
+    creating new connections for each request. 
+    This can improve the performance of your Django application by reducing the overhead of establishing new connections to the database.
+    Here's how to set up connection pooling for a PostgreSQL database in Django using django-db-connection-pool:
+    
+    OR 
+     
+    Connection pooling is a technique used in software applications to manage and reuse database connections. 
+    It is especially beneficial in scenarios where establishing a new connection to a database 
+    server is resource-intensive and time-consuming.
+    
+31) Atomic Transactions In Django ?
+ans :
+    In Django, atomic transactions provide a way to ensure the consistency of the database 
+    by allowing you to group a set of database operations together into a single transaction. 
+    An atomic transaction guarantees that either all of the operations within the transaction are executed, 
+    or none of them are executed. This helps to ensure that the database is always in a valid state, 
+    even if an error occurs during the transaction.
+     
+       
+32) Explain Django Migrations , migrate vs makemigrations ?
+ans :
+
+    Django Migrations is a built-in feature that allows you to manage changes 
+    to your database schema over time. Migrations enable you to modify 
+    your models and update your database schema without losing your existing data.
+
+    In summary, makemigrations generates a migration file that describes the changes to your models, 
+    and migrate applies the migration file to the database. By using migrations, 
+    you can modify your models and database schema over time, without losing your 
+    existing data, and keep your database schema in sync with your codebase.
+    
+    
+    or 
+    
+    In Django, makemigrations and migrate are two management commands that you use to 
+    manage the database schema of your application. 
+    They are used in the process of defining, updating, and synchronizing your database schema with your Django project's models.
+
+    makemigrations:
+
+    The makemigrations command is used to create new database migration files based on 
+    the changes you've made to your Django models. 
+    These changes can include creating new models, adding fields to existing models, or modifying model field attributes.
+    When you run makemigrations, Django analyzes your models and generates migration 
+    files that represent the database schema changes necessary to reflect those models.
+    For example, if you add a new model or make changes to an existing one,
+    you would run python manage.py makemigrations to create migration files for those changes.
+    The generated migration files are saved in the migrations directory of each Django app, typically found within the app's directory.
+    
+    
+    migrate:
+
+    The migrate command is used to apply the generated database migrations to the actual database. 
+    It takes the migration files created by makemigrations and executes the SQL statements to update the database schema.
+    Running migrate is essential for keeping the database in sync with the current state of your Django models.
+    When you run python manage.py migrate, Django processes all pending migrations in the order they were created, 
+    and the database is updated accordingly
+    
+    The typical workflow for making database schema changes in a Django project is as follows:
+
+    Make changes to your models in your Django application.
+    Run makemigrations to generate migration files based on these model changes.
+    Run migrate to apply the generated migrations to the database.
+    Here's a breakdown of the typical workflow:
+
+    makemigrations is a preparation step that generates migration files but doesn't make changes to the database itself.
+    migrate is the step that actually updates the database schema based on the migration files.
+    By using these commands, you can maintain your database schema as your Django project evolves, 
+    and you can version-control the changes in your project's version control system, 
+    making it easier to collaborate with others and maintain the integrity of your database schema.
+    
+    
+33) Explaing Caching
+ans :
+
+    Caching is a technique used to temporarily store frequently accessed data in 
+    a fast and accessible location to reduce the load on the system and improve performance. 
+    In Django, caching is used to store the results of expensive computations, database queries, 
+    and other time-consuming operations so that they can be quickly retrieved without having to be recalculated or re-executed.
+
+    Django provides a caching framework that allows you to cache data at various levels such as per-view, 
+    per-site, or per-user. The caching framework provides a consistent API that 
+    you can use to cache and retrieve data regardless of the cache backend used. 
+    Django supports several cache backends, including in-memory caching, 
+    file-based caching, and third-party cache backends such as Memcached and Redis.
+
+    To use caching in Django, you need to configure the cache settings in your project's settings file. 
+    You can specify the cache backend to use, the cache timeout, and other settings. 
+    Here's an example of configuring the caching backend to use Memcached:
+    
+
+34) Explaing Celery Integration ?
+ans :
+     
+     Celery is a distributed task queue that allows you to 
+     run background jobs asynchronously in a separate process or on a remote worker. 
+     In Django, Celery is commonly used for running long-running or time-consuming tasks 
+     in the background, such as sending emails, processing images, or generating reports.
+
+     To integrate Celery with your Django project, you need to perform the following steps:
+
+       1)Install the necessary dependencies: You need to install Celery and a message broker such as RabbitMQ or Redis. 
+         The message broker is used to pass messages between the Django application and Celery workers.
+
+       2)Create a Celery app: You need to create a Celery app in your Django project. 
+         This app will be used to manage the background tasks.
+
+       3)Define tasks: You need to define tasks that Celery can execute. 
+         A task is a Python function that performs a specific job.
+
+       4)Configure Django settings: You need to configure the Django settings to use the Celery app as the task runner.
+
+
+    ===============================
+    #Celery:
+       Celery is an open-source distributed task queue system for 
+       Python that is used to handle asynchronous and distributed tasks on remote or separa processor with web applications. 
+       It allows you to offload time-consuming and resource-intensive tasks to be executed in the background, 
+       separate from the main application logic. 
+       Celery is widely used in web development to improve application performance and responsiveness.
+
+     Key features and components of Celery include:
+
+     1)Task Queue: 
+        Celery operates as a task queue, where tasks are defined as Python functions or methods. 
+        These tasks can be executed asynchronously and concurrently.
+
+     2)Distributed: 
+        Celery is designed to work in a distributed environment. 
+        It supports distributed task execution across multiple worker processes and even multiple machines, 
+        which can be especially useful for scaling applications.
+
+     3)Message Broker: 
+        Celery relies on a message broker (e.g., RabbitMQ, Redis, or others) 
+        to manage the communication between the application and the worker processes. 
+        The message broker serves as a communication channel for passing task requests and results.
+
+     4)Task Results: 
+        Celery can store the results of completed tasks, making it possible to retrieve task outcomes, 
+        check their status, and handle failures.
+
+     5)Scheduling: 
+        Celery includes a scheduling component that allows you to execute tasks at specified times or intervals, 
+        making it useful for implementing periodic or delayed tasks.
+
+     6)Concurrency: 
+        It supports task parallelism and can manage multiple tasks concurrently, 
+        which is particularly beneficial for applications with high loads or resource-intensive processing.
+
+     Typical use cases for Celery include:
+
+	- Sending emails asynchronously to improve the responsiveness of web applications.
+	- Processing and analyzing large data sets in the background.
+	- Handling file uploads, image processing, and other time-consuming tasks.
+	- Managing periodic tasks such as generating reports or cleaning up data.
+	- Scaling web applications horizontally by distributing tasks across multiple servers.
+	
+	Here's a simple example of using Celery to perform a task asynchronously:
+
+	python
+	Copy code
+	from celery import Celery
+
+	# Create a Celery instance
+	app = Celery('myapp', broker='redis://localhost:6379/0')
+
+	# Define a task
+	@app.task
+	def add(x, y):
+	    return x + y
+
+	# Invoke the task asynchronously
+	result = add.delay(4, 6)
+	
+	In this example, the add function is executed asynchronously by a Celery worker process, 
+	and the result is returned when the task is complete.
+
+     Celery is a powerful tool for improving the performance and scalability of Python applications 
+     by offloading time-consuming tasks, allowing the application to respond more quickly to user requests.
+      
+
+7)  Model manager:
+ans: 
+
+    A Manager is the interface through which database query operations are provided to Django models.
+    At least one Manager exists for every model in a Django application. objects is default manager
+    there are 2 purposes we  overwirte or write custom manager:
+    i)to add extra manager method  and ii) to modify the initial QuerySet the Manager returns.  
+    we can write multiple manager to one model.
+   
+    the difference is that you cannot chain your method that is present in the models Manager.
+    suppose we created 
+  
+    To make it work you must create custom QuerySet methods:
+  
+  
+8) makemigrations:
+ans:  
+    to generate  sql command from python object 
+    we can see that sql command by sqlmigrate command 
+   
+    migrate :
+      to execute that sql command to create table 
+      
+    custom migrations :
+   
+    1) A table with user and bank info (alreday data is present)
+    2) want to normalize db table i.e create 2 table user & bank_detail (only apply makemigrations)
+    3) in new migration file will write function with sql raw querires 
+       in order to migrate the bank details from user to bank_detail table 
+       (make connection object and cursor & data insert command)
+      (without writing python data migration script)
+      
+ 
+ 9) Django Signals:
+ ans:
+    
+    Django signals are a great way of communicating between your apps.
+    Django provides a mechanism to send and 
+    receive messages between different parts of an application, called the ‘signal dispatcher’.
+    There are two key concepts: the Signal and the Receiver.
+    
+    Signals:
+    A Signal is an object corresponding to a particular event
+   
+    Receiver:
+    Receivers are callables that are connected to a particular signal. 
+    When the signal sends its message, each connected receiver gets called.
+    
+    Those are the basics of the signals dispatcher. 
+    You have signals and receivers, the receivers can connect to the signals, 
+    and the signals send messages to any connected receivers
+    
+    
+10) Mixin:
+ans: 
+
+    Mixin in Django is a Python class inherited by another class 
+    to accomplish additional functionality. Mixins are reusable and scalable classes.
+    
+    type:
+    
+    i) Custom Mixins: These are the mixins created by a user for their specific
+    ii) Built-in Mixins: These are the default mixins that come with Django to provide out-of-the-box functionalities
+        e.g.
+         LoginRequiredMixin
+	     TemplateResponseMixin
+	     SingleObjectMixin
+	     MultipleObjectMixin
+	     FormMixin 
+
+12) installed_app:
+ans: 
+    if app not added in installed_app:
+      - no migrations for that app
+      - no static 
+      - test file within app would not run
+      - management command  listed in app wouldnt run 
+
+13) session:
+ans: 
+    Session in Django is a mechanism to store small information on the server-side during the interaction with 
+    the Django web application. Session information gets stored in the database and allows for cache-based or file-based sessions. 
+    Django Session is implemented by the middleware and session app mentioned.
+       
+14) static file config:
+ans:
+    1) STATIC_URL: This setting defines the base URL for your static files.
+       i.e
+       STATIC_URL = '/static/'
+    
+    2) STATICFILES_DIRS: 
+       This setting specifies the directories 
+       where Django should look for static files other than the app-specific static folders.
+       STATICFILES_DIRS = [
+    	  # Add paths to additional static file directories here
+    	  # For example:
+    	  # os.path.join(BASE_DIR, "static"),]
+    
+    3) STATIC_ROOT: 
+       This setting specifies the directory where Django will collect all 
+       static files from your apps and STATICFILES_DIRS into a single directory for deployment.
+       i.e
+       STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 	  
+    
+    
+           
+Django responses:
+Q. Render function:
+ans: 
+    1)render function Combines a given template with a given context dictionary and 
+    returns an HttpResponse object with that rendered text.
+    return success code like 200 seires and HttpResponse object
+    It takes the template(template_name) and combines with a given context dictionary 
+    and returns an HttpResponse object with that rendered text.
+    
+    2)redirect and HttpResponseRedirect difference:
+    ex. return redirect(my_url)
+    
+    HttpResponseRedirect : In the case of HttpResponseRedirect the first argument can only be a url.
+    
+    redirect : redirect which will ultimately return a HttpResponseRedirect 
+    		can accept a model, view, or url as it's "to" argument. 
+    		So it is a little more flexible in what it can "redirect" to.
+    		returns code of 302 to tell the browser to redirect to new given URL
+    
+    3)  httprespone:
+    	In short, HttpResponse can be used to send any kind of data over HTTP. 
+    	You can use it to set custom headers, or anything you can think of related to HTTP responses.
+    
+    4)  reverse:
+        Reverse Method will return the complete URL to that route as a String.
+    
+    5)  reverse_lazy:
+        Reverse_lazy is a lazy implementation of the reverse URL resolver
+        It is useful because it prevent Reverse Not Found exceptions when working with URLs that may not be immediately known.
+       
+        note : reverse() returns a string & reverse_lazy() returns an <object>
+              reverse_lazy in CBV(class variable), reverse in class method FBV
+             Python class attributes are evaluated on the declaration
+              
+              
+             Why do we need it? It's needed because, Class attributes are evaluated on import 
+             and at that time Reverse method will return 'Reverse Not Found'. 
+             Later upon need, at the time of its execution, 
+             all the necessary code snippets will be executed already, to give a valid URL.
+             it is useful for when you need to use a URL reversal before your project's URLConf is loaded
+   
+12) CBV:
+ans: 
+    Class-based views provide an alternative way to implement views as Python objects instead of functions.
+    ADVANTAGE: 
+    	The organization of code related to specific HTTP methods (GET, POST, etc.) 
+    	can be addressed by separate methods instead of conditional branching.
+	    Object-oriented techniques such as mixins (multiple inheritances) can be used to factor code into reusable components.
+	
+	i.e  conditional barnching and mixin 
+	
+11) Celery:
+ans: 
+
+    Celery is an open-source Python library which is used to run the tasks asynchronously. 
+    It is a task queue that holds the tasks and  distributes them to the workers in a proper manner.
+
+
+  
+12) Crontab:
+ans :
+
+    cron:
+    cron” is a utility that schedule scripts or commands to be run automatically 
+    	at specified time and date or intervals and these tasks or jobs are what we call as “cron job”.
+ 
+ 
+13) procedure oriented(PL) :
+ans: python provide 2 programming styles PL & OOP's
+     PL = taking the programme & divide into multiple functions
+     OOP's = taking the programme & divide into multiple objects
+     
+     python : simple english like language, easy compaired with other language 
+     bcoz there is less syntax to learn, less notation, less conventions, 
+     
+14) Web application:
+ans:  
+     it is framework or a application framework where you have lot of component available and 
+     it is organised in a such way u can do web  development faster that's called web application framework 
+     all the things spawn multiple thread and when request come how to procees it, how to pass the http header
+       
+15) Ways to Extend the Existing User Model:
+ans: 
+
+    Option 1: Using a Proxy Model
+    Option 2: Using One-To-One Link With a User Model
+    Option 3: Creating a Custom User Model Extending AbstractBaseUser
+    Option 4: Creating a Custom User Model Extending AbstractUser
+    
+    USE CASE:
+    When should I use a Proxy Model?
+    You should use a Proxy Model to extend the existing User model when you don’t need to store extra information in the database,
+    but simply add extra methods or change the model’s query Manager.
+
+
+16) Select-prefetch related/"N+1" problem :
+ans: 
+    The "N+1" problem is a common performance issue that can occur 
+    when using an Object-Relational Mapping (ORM) framework like Django's ORM. 
+    It refers to the situation where you retrieve a list of objects and then, for each object, 
+    make an additional database query to fetch related data. 
+    This results in N+1 queries to the database, where N is the number of objects you initially retrieved
+    
+    example :
+    
+    1) when have foreignkey:
+    
+       class Author(models.Model):
+    	   name = models.CharField(max_length=100)
+
+       class Book(models.Model):
+    	   title = models.CharField(max_length=100)
+    	   author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    
+    
+    COMMON APPROACH:
+         
+         authors = Author.objects.all()
+
+         for author in authors:
+             books = author.book_set.all()
+             for book in books:
+                 print(f"{author.name}: {book.title}")
+    
+    _______________________________________
+         
+         
+    WITH RELATED NAME:
+       
+         a)ORM QUERY:
+         
+         authors = Author.objects.select_related('book').all()
+
+         for author in authors:
+             print(f"{author.name}: {author.book.title}")
+       
+      
+         authors = Author.objects.prefetch_related('book_set').all()
+
+         for author in authors:
+            books = author.book_set.all()
+    
+            for book in books:
+                print(f"{author.name}: {book.title}")
+          
+            
+        b)sql query :
+        
+         1)select_related:
+         
+         SELECT "myapp_author"."id",
+	       "myapp_author"."name",
+	       "myapp_book"."id",
+	       "myapp_book"."title",
+	       "myapp_book"."author_id"
+         FROM "myapp_author"
+         LEFT OUTER JOIN "myapp_book" ON ("myapp_author"."id" = "myapp_book"."author_id");   
+         
+         2)prefetch_related:
+         
+         SELECT "myapp_author"."id",
+             "myapp_author"."name"      
+         FROM "myapp_author";
+
+         SELECT "myapp_book"."id",
+             "myapp_book"."title",
+             "myapp_book"."author_id"
+         FROM "myapp_book"
+         WHERE "myapp_book"."author_id" IN (1, 2, 3);
+          
+         
+         
+    ________________________________________________________________________________________________
+    
+   
+   B)when table have foreignkey and M2M:
+       
+       
+       #FOR SELECT REALTED:
+       
+        class Author(models.Model):
+            name = models.CharField(max_length=100)
+
+        class Publisher(models.Model):
+            name = models.CharField(max_length=100)
+
+        class Book(models.Model):
+            title = models.CharField(max_length=100)
+            author = models.ForeignKey(Author, on_delete=models.CASCADE)
+            publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE)
+          
+            	
+        WITH RELATED NAME:
+       
+         a)ORM QUERY:      	
+        	
+          books = Book.objects.select_related('author', 'publisher').all()
+
+	  for book in books:
+	      print(f"Book: {book.title}")
+            
+          authors = Author.objects.prefetch_related('book_set').all()
+
+          for author in authors:
+             print(f"Author: {author.name}")
+             for book in author.book_set.all():
+                 print(f"Book: {book.title}")  
+                 
+         
+       #FOR PREFTECH RELATED:
+         
+         class Genre(models.Model):
+    	      name = models.CharField(max_length=100)
+
+         class Author(models.Model):
+             name = models.CharField(max_length=100)
+             genres = models.ManyToManyField(Genre)
+             
+         
+         authors = Author.objects.prefetch_related('genres').all()
+
+         for author in authors:
+             print(f"Author: {author.name}")
+             for genre in author.genres.all():
+                 print(f"Genre: {genre.name}")
+                 
+         
+         SQL QUERY:
+         
+         SELECT "myapp_author"."id",
+             "myapp_author"."name"
+         FROM "myapp_author";
+                 
+         
+         SELECT "myapp_genre"."id",
+              "myapp_genre"."name",
+              "myapp_author_genres"."author_id"
+         FROM "myapp_genre"
+         INNER JOIN "myapp_author_genres" ON ("myapp_genre"."id" = "myapp_author_genres"."genre_id")
+         WHERE "myapp_author_genres"."author_id" IN (1, 2, 3);   
+         
+         
+Q) GenericForeignKey and  Dynamic Foreignkey:
+ans:
+
+    A)GenericForeignKey:
+    
+ 
+    A GenericForeignKey is a feature in some relational database systems that allows a 
+    single field to reference different types of objects or records in different database tables. 
+    It's a way to create a polymorphic relationship, where the foreign key can point to objects 
+    in multiple tables without requiring a separate foreign key for each target table.
+
+    In the context of Django, a popular Python web framework, 
+    the GenericForeignKey is a field type provided by the Django's contenttypes framework. 
+    It allows you to create relationships between a model and any other model in your application, 
+    even if they are of different types. 
+    This can be useful in scenarios where you want to create a flexible and generic relationship.
+
+    Here's a simplified example of how it works in Django:
+
+    Suppose you have a Comment model and you want to allow comments 
+    to be associated with various types of content, such as BlogPost, Video, and Image. You can use a GenericForeignKey to achieve this:
+
+
+   from django.db import models
+   from django.contrib.contenttypes.fields import GenericForeignKey
+   from django.contrib.contenttypes.models import ContentType
+
+   class Comment(models.Model):
+       content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
+       object_id = models.PositiveIntegerField()
+       content_object = GenericForeignKey('content_type', 'object_id')
+       text = models.TextField()
+
+
+   class BlogPost(models.Model):
+       title = models.CharField(max_length=100)
+       content = models.TextField()
+
+   class Video(models.Model):
+       title = models.CharField(max_length=100)
+       url = models.URLField()
+
+   class Image(models.Model):
+       title = models.CharField(max_length=100)
+       image_file = models.ImageField()
+       
+    With this setup, you can associate comments with any of the other models using the GenericForeignKey. 
+    The content_type field specifies the content type of the associated model, 
+    and object_id stores the ID of the specific object. The content_object field is a generic relation to the content object.
+
+    For example, you can create a comment associated with a BlogPost like this:
+
+ 
+    blog_post = BlogPost.objects.get(pk=1)
+    comment = Comment.objects.create(content_object=blog_post, text="Great post!")
+    The GenericForeignKey allows you to create flexible relationships in your Django application, 
+    making it easier to handle scenarios where one model can be related to multiple other models.
+
+
+    Sure, let's consider another example involving a content management system where you want to 
+    allow users to add comments or ratings to different types of content, 
+    including articles, videos, and images. You can use the GenericForeignKey to create a flexible relationship in this scenario:
+    
+
+    B)Dynamic Foreignkey:
+    
+    
+    In this scenario, we'll imagine a simplified e-commerce platform where you need to 
+    route customer orders to different shipping providers based on the country of the customer. 
+    You want to dynamically associate each order with a shipping provider table based on the customer's country.
+    
+    from django.db import models
+
+    class ShippingProviderUSA(models.Model):
+        name = models.CharField(max_length=50)
+   
+
+    class ShippingProviderCanada(models.Model):
+        name = models.CharField(max_length=50)
+        
+        
+    from django.db import models
+
+    class Order(models.Model):
+        customer_name = models.CharField(max_length=100)
+        country = models.CharField(max_length=2)  # Assume a simplified country code
+        shipping_provider = models.ForeignKey(
+        to="ShippingProvider" + country,  # Dynamic foreign key based on country
+        on_delete=models.CASCADE,
+    )
+        order_total = models.DecimalField(max_digits=10, decimal_places=2)
+        
+         
+=======================================================================================
+# DJANGO REST FRAMEWORK #
+
+1)  Django Rest Framework ?
+ans :
+    Django Rest Framework (DRF) is a powerful and flexible toolkit for building Web APIs. 
+    It is built on top of the Django web framework and provides a set of tools and shortcuts for building RESTful APIs. 
+    DRF makes it easy to serialize and deserialize complex data structures, handle authentication and permissions, 
+    handle file uploads, and build views and serializers that work seamlessly with the Django ORM.
+    It also includes a powerful browsable API interface, 
+    which makes it easy to explore and test your API.
+
+2)  How is Django Rest Framework different from Django?
+ans :
+    1)Focus: Django is a full-stack web framework designed for building web applications, while DRF is focused on building RESTful APIs.
+    
+    2)Serialization: DRF provides powerful serialization tools that make it easy to serialize and 
+    deserialize complex data structures, while Django's built-in serialization tools are more limited.
+    
+    3)Browsable API: DRF includes a browsable API interface that makes it easy to explore and test your API, 
+    while Django does not provide this out of the box.
+    
+    4)Authentication and Permissions: DRF provides a comprehensive set of tools for handling authentication and 
+    permissions for API endpoints, while Django's built-in authentication and permission system is designed for web applications.
+    
+    5)Response Formats: DRF provides support for a wide range of response formats (e.g. JSON, XML, HTML), 
+    while Django primarily focuses on HTML responses.
+
+3)  What are serializers in Django Rest Framework?
+ans :
+    In Django Rest Framework, serializers are components that convert complex data types, 
+    such as Django model instances or Python objects, into a format that can be easily rendered into JSON, XML, or other content types.
+    serializers is also responsible for deserialization process 
+
+    Serializers in DRF are similar to Django forms, as they validate input data and ensure that data is converted to and 
+    from a valid format. However, serializers are designed specifically for dealing with APIs and can handle more 
+    complex data structures, 
+    such as nested data, many-to-many relationships, and more.
+
+4)  What are some common authentication methods used in Django Rest Framework?
+ans :
+    Django Rest Framework (DRF) provides several built-in authentication classes, 
+    as well as the ability to create custom authentication classes, which can be used to secure your API. 
+    Here are some of the most commonly used authentication methods in DRF:
+    
+    1)Token Authentication: 
+    This authentication method uses a token-based system to authenticate users. 
+    When a user logs in, a unique token is generated and returned to the client. 
+    The client must then include this token in all subsequent requests to access protected resources.
+    
+    2)Session Authentication: 
+    This authentication method uses Django's built-in session framework to authenticate users. 
+    When a user logs in, a session is created on the server, and a session ID is returned to the client. 
+    The client must then include this session ID in all subsequent requests to access protected resources.
+    
+    3)Basic Authentication: 
+    This authentication method uses HTTP Basic authentication to authenticate users. 
+    When a user logs in, their credentials (i.e. username and password) are sent in the request headers. 
+    The server then validates these credentials and either grants or denies access to the requested resource.
+    
+    4)Token-Only Authentication: 
+    This is similar to Token Authentication, but doesn't require any additional user credentials to be sent with the request. 
+    Instead, the client sends only a token that was previously obtained using a different authentication method.
+    
+    5)JSON Web Token (JWT) Authentication: 
+    JWT is a standard for creating JSON-based access tokens that can be used for authentication. 
+    This authentication method uses JWTs to authenticate users. 
+    When a user logs in, a JWT is generated and returned to the client. 
+    The client must then include this JWT in all subsequent requests to access protected resources.
+
+
+5)  How do you handle pagination in Django Rest Framework?
+ans :
+    Pagination is an important feature of APIs, as it allows clients to 
+    request only a subset of the available resources, rather than retrieving all the resources at once. 
+    In Django Rest Framework, pagination is handled using the Pagination classes.
+
+6)  What is the difference between a function-based view and a class-based view in Django Rest Framework?
+ans :
+    Function-Based Views (FBVs) and Class-Based Views (CBVs) in Django Rest Framework (DRF) are 
+    used to handle HTTP requests and responses. FBVs are simple Python functions that directly handle requests, 
+    while CBVs use classes with methods for each HTTP method, providing better organization and reusability. 
+    CBVs are preferred for larger and more complex projects, whereas FBVs are simpler and suitable for smaller tasks.
+
+
+7)  How do you test APIs in Django Rest Framework?
+ans :
+    By writing test cases and using the test client, you can verify that your APIs are functioning 
+    Here's a step-by-step guide on how to test APIs in DRF:
+    
+    Set Up Test Cases:
+    Write Test Methods:
+    Test Client Methods:
+    Authentication and Permissions:
+    Run Tests:
+    
+    In Django Rest Framework (DRF), you can test APIs using the built-in test client provided by Django. 
+    
+
+8)  How do you handle errors in Django Rest Framework?
+ans :
+
+    handling errors in DRF is a critical part of building robust and reliable APIs. 
+    By using a combination of exceptions, custom error handling, response objects, error codes and messages, and logging, 
+    you can provide a better experience for your users and make it easier to diagnose and fix issues in your application.
+
+9)  What is the purpose of ViewSets in Django Rest Framework?
+ans :
+    ViewSets in Django Rest Framework (DRF) provide a way to group related views and endpoints into a single class, 
+    making it easier to manage and organize complex APIs.
+    A ViewSet is a class that defines the CRUD (Create, Retrieve, Update, Delete) operations for a model or other data source, 
+    and exposes these operations as methods that can be mapped to HTTP methods such as GET, POST, PUT, and DELETE.
+    
+    One of the benefits of using ViewSets in DRF is that they allow you to define multiple endpoints for a single resource, 
+    each with its own set of permissions, authentication, and other settings. 
+    This can be useful for implementing complex APIs with granular access controls and other requirements.
+
+10) How do you create custom permissions in Django Rest Framework?
+ans :
+
+    Django Rest Framework (DRF) provides a flexible and extensible permissions system that allows you to 
+    control access to your API endpoints based on a variety of criteria. 
+    Here is an example of how to create a custom permission class in DRF:
+
+    from rest_framework.permissions import BasePermission
+    
+    ex.
+    class CustomPermission(BasePermission):
+        def has_permission(self, request, view):
+            # Add custom logic to check if the user has permission to access the endpoint
+            if request.user.is_authenticated:
+                return True
+            else:
+                return False
+
+    In this example, we define a new CustomPermission class that inherits from the BasePermission class provided by DRF.
+    We override the has_permission method, which is called to check if the user has permission to access the endpoint.
+    In this case, we check if the user is authenticated by calling the is_authenticated method on the request.
+    user object. If the user is authenticated, we return True to indicate that the user has permission to access the endpoint. 
+    Otherwise, we return False to deny access.
+
+11) How do you handle file uploads in Django Rest Framework?
+ans :
+    Handling file uploads in Django Rest Framework (DRF) is a common requirement for building web applications. 
+    Here is an example of how to handle file uploads in DRF:
+    Define a serializer that includes a FileField to handle the uploaded file:
+    Define a view that handles the file upload and returns a response:
+
+
+12) What are some common pitfalls to avoid when using Django Rest Framework?
+ans : 
+
+    Django Rest Framework (DRF) is a powerful and flexible toolkit for building web APIs in Django, but like any technology, 
+    it has some common pitfalls that developers should be aware of. 
+    Here are some common pitfalls to avoid when using DRF:
+
+    a) Overcomplicating your serializers
+    b) Forgetting to add permissions
+    c) Not handling errors properly
+    d) Not using pagination
+    e) Ignoring performance
+    f) Not versioning your API:
+    g) Failing to properly secure your API
+
+
+13) How do you optimize performance in Django Rest Framework?
+ans : 
+    Optimizing performance in Django Rest Framework (DRF) is an important consideration for any web application. 
+    Here are some strategies you can use to improve performance in DRF:
+    
+    1) Use caching
+    2) Use pagination
+    3) Optimize database queries
+    4) Serializer Optimization
+    5) Use Django Middleware
+    6) Authentication and Authorization
+    7) Database Indexing
+    8) Middleware Ordering
+    9) Avoid N+1 Query Problems
+    10) Throttling
+    11) Profiling and Monitoring
+    12) Use Asynchronous Views
+    13) Load Balancing and Scaling
+    
+
+Q.  Django signals ?
+ans : 
+
+    In Django, signals are a way to allow decoupled applications to get notified 
+    when certain actions occur elsewhere in the application. 
+    They provide a way to allow multiple parts of the application to interact with each other without being tightly coupled.
+
+    A signal is essentially a trigger that is fired when a particular event occurs in the application. 
+    These events can include things like creating, updating, or deleting a database record, 
+    logging in or logging out a user, or when a certain task is completed. 
+    When an event occurs, the signal is sent and any functions or 
+    methods that have been registered to listen for that signal will be executed.
+    
+    or
+    
+    Django signals are a mechanism for allowing various parts of a Django application to communicate 
+    and react to certain events or actions that occur within the application. 
+    They provide a way to decouple different components of your Django project, 
+    allowing for more flexible and modular code. 
+    Django signals are typically used for implementing event-driven programming in your web application.
+    
+    
+    Sender: 
+         The sender is the object that sends the signal. 
+            In Django, it's usually a model class or some other component within your application.
+
+    Signal: 
+         A signal is essentially a notification that something has happened. 
+            It's a simple Python object that represents an event.
+
+    Receiver: 
+         A receiver is a function that is connected to a signal and is executed when the signal is sent. 
+         Receivers are responsible for responding to the event.
+
+    Connect: 
+         Connecting a receiver to a signal means specifying which function should be called when the signal is sent.
+
+    Disconnect: 
+         You can also disconnect a receiver from a signal, which means that it will no longer respond to that signal.
+         
+         
+    Django signals are commonly used for various purposes, such as:
+
+    1) Updating related data: 
+       When an object is saved, you can use signals to automatically update related data or trigger other actions.
+
+    2) Sending notifications: 
+       You can send email notifications, push notifications, or other messages when specific events occur.
+
+    3) Logging and auditing: 
+       You can use signals to log changes to your database records or audit actions taken in your application.
+
+    4) Caching: 
+       Signals can be used to invalidate or update cache when data changes.
+    
+    
+    or  
+    
+    Django signals are a way of allowing certain parts of the Django framework to communicate 
+    with each other without being directly connected. 
+    They are essentially hooks that allow specific events to trigger certain actions. 
+    Here are some common use cases for Django signals with examples:
+
+    1) Updating a Profile when a User is saved: 
+       In this scenario, a signal is used to automatically update the profile of a user whenever the user is saved.
+       
+    2) Sending Email Notifications:
+       a signal is used to automatically send an email notification whenever a new record is created in a specific model.
+       
+    3) Updating Cache:
+       a signal is used to automatically update a cache whenever a specific model is saved.
+    
+    4) Deleting Related Objects:
+       a signal is used to automatically delete related objects when a specific model is deleted.
+       
+    5) Handling Post-Commit Transactions:
+       In this scenario, a signal is used to handle post-commit transactions, 
+       which are transactions that are executed after a commit has been made.
+     
+    6) Handling User Authentication:
+       In this scenario, a signal is used to handle user authentication events, such as when a user logs in or logs out.
+       
+    7) Sending Push Notifications:
+       In this scenario, a signal is used to automatically send push notifications whenever a new record is created in a specific model.
+
+    
+ 
+14) What is the role of routers in Django Rest Framework?
+ans :
+
+    In Django Rest Framework, routers are used to automatically generate URL patterns for views and viewsets. 
+    They allow you to easily map HTTP methods to specific views or viewsets and generate URLs for those views or viewsets.
+    The role of routers in DRF is to reduce the amount of boilerplate code needed to create URLs for your API views and viewsets. 
+    Instead of manually defining URL patterns for each view or viewset, you can use a router to generate them automatically.
+    DRF provides two types of routers: SimpleRouter and DefaultRouter. 
+    SimpleRouter is a basic router that generates URL patterns for each view or viewset based on the HTTP method. 
+    DefaultRouter is a more powerful router that generates URL patterns for views and 
+    viewsets based on the model they are associated with.
+
+    In this example, we create a DefaultRouter instance and register a viewset called MyViewSet with the router. 
+    The router generates URL patterns for the viewset based on the model it is associated with.
+    Overall, routers in Django Rest Framework simplify the process of creating URL patterns for your API views and viewsets, 
+    making it easier to build RESTful web APIs in Django.
+    To use a router in DRF, you typically create a router instance and register your views or viewsets with it. For example:
+    
+15) How do you use Django Rest Framework to create nested serializers?
+ans : 
+    In Django Rest Framework, you can use nested serializers to represent complex relationships between models in your application.
+    Here's an example of how to create nested serializers in DRF:
+    Suppose we have two models, Author and Book, where each author can have multiple books. 
+    We want to create a serializer that represents an author and includes information about their books.
+    
+    First, we define a serializer for the Book model:
+    
+Q) ViewSet vs ModelViewSet : when to use 
+ans :
+     Choosing between a ViewSet and a ModelViewSet in Django Rest Framework depends on the 
+     complexity of your API views and the level of customization you require. 
+     Here are some guidelines to help you decide when to use each:
+
+	ViewSet:
+	Use a ViewSet when:
+	You need complete control over defining custom actions for different HTTP methods on a resource.
+	Your API views require more complex logic beyond basic CRUD operations.
+	You want to create a set of views that are not necessarily tied to a specific Django model.
+	Using a ViewSet allows you to have fine-grained control over your API views, 
+	but it also means you'll need to implement each method (list, retrieve, create, update, delete) manually.
+
+	ModelViewSet:
+	Use a ModelViewSet when:
+	You want to create standard CRUD views for a Django model without writing all the view methods yourself.
+	Your API views follow the typical RESTful conventions of handling CRUD operations on a model.
+	A ModelViewSet provides default implementations for CRUD actions, 
+	so you don't need to write individual methods for each of them. 
+	It automatically generates the basic views for your model, saving you development time and effort.    
+	    
+    
+16) APIView :
+ans :
+
+    APIView is a class-based view provided by the Django REST framework (DRF) for building RESTful APIs. 
+    It is a subclass of Django's View class and provides some additional functionality specifically for building APIs.
+
+    APIView handles much of the common behavior that is needed when building APIs, 
+    such as content negotiation, request parsing, and response rendering. 
+    It also provides a set of methods for handling HTTP methods (e.g. get(), post(), put(), delete()) 
+    that are commonly used in RESTful APIs.
+
+    One of the key benefits of using APIView is that it provides a consistent interface for building APIs, 
+    which can make your code more maintainable and easier to understand.
+    Additionally, APIView provides a lot of flexibility for customization, 
+    allowing you to easily modify its behavior to fit your specific requirements.
+
+    For example, you can define your own custom methods for handling specific actions, 
+    or override the default behavior for handling errors and exceptions. 
+    Overall, APIView is a powerful and flexible tool for building RESTful APIs in Django.
+   
+
+17)HTTP Method:
+ans : 
+    HTTP methods are standard command that use to make request on resource identified by URL
+    Each HTTP method corresponds to a specific type of operation that can be performed on a web server. 
+    Here are some of the commonly used HTTP methods:
+
+
+    1)GET: 
+        This method is used to request data from a specified resource. 
+        It should only retrieve data and not make any changes to the resource. 
+        It is safe and idempotent, meaning that multiple identical requests should have the same effect as a single request.
+
+    2)POST: 
+        POST is used to submit data to be processed to a specified resource. 
+        It can be used to create new resources, submit form   data, or send data to be processed by a script on the server. 
+        Unlike GET, POST requests may change the server's state, and they are not idempotent.
+
+    3)PUT: 
+        PUT is used to update a resource or create a new resource if it doesn't exist at the specified URL. 
+        It replaces the existing resource with the new one provided in the request.  
+        It should be idempotent, meaning that repeated PUT requests should have the same effect as a single request.
+
+    4)PATCH: 
+        PATCH is used to apply partial modifications to a resource. 
+        It is typically used when you want to update only a portion of a resource, rather than replacing the entire resource. 
+        Like PUT, it should be idempotent.
+
+    5)DELETE: 
+        DELETE is used to request the removal of a resource at the specified URL. 
+        It is used to delete resources on the server. 
+        It should be idempotent, meaning that making the same DELETE request multiple times 
+        should have the same effect as a single request.
+   
+    
+1)what is API ?
+ans:
+
+   Application programming interface, a interface that allows two programs/software to talk to each other.
+   
+   or
+   
+   An API is a set of defined rules that explain how computers or applications communicate with one another. 
+   APIs sit between an application and the web server, acting as an intermediary layer that processes data transfer between systems.
+
+   #benefit :
+   Improved collaboration
+   Easier innovation
+   Data monetization
+   Added security	
+   
+   #type:
+   Open APIs
+   Partner APIs
+   Internal APIs
+   Composite APIs
+   
+   #Types of API protocols:
+    (set of defined rules that specifies the accepted data types and commands)
+   1)SOAP (Simple Object Access Protocol) :  send and receive data through SMTP and HTTP. (XML format)
+   2)XML-RPC -specific format of XML to transfer data 
+   3)JSON-RPC -JSON instead of XML format to transfer data.
+   4)REST -the interface must adhere to certain architectural constraints. 
+  
+   
+2) DRF :
+ans: 
+    DRF is microframework library bulid on django for building Web APIs
+    it makes it easy to use your Django Server as an REST API.
+    Its main benefit is that it makes serialization much easier.
+    
+    
+3) syllabus:
+ans:  
+    API/View:
+    	FBV api view  (@api_view(['GET', 'POST','PUT','PATCH','DELETE']))
+    	CBV api view  (APIView)
+    	Generic view  (
+    Serialization:
+       serializer,modelserializer,hyperlinkedseriazlier,listserializer,baseserializer
+    Viewset:-
+         viewset,modelviewset,router
+    validation:
+       valdiators
+    authentication and permission:
+        basic,session,ticket,JWT,permission classes
+    throtling:
+        API limit (anon,user,robot) anonymous,authenticated user & specific user
+        
+    filtering:
+        filter query in queryset(orm)
+       
+ 
+Q) Redis:
+ans: 
+   Redis is an open-source, in-memory data store that is often used as a cache, message broker, and data structure server   
+   
+Q) Postman:
+ans:
+   Postman is a popular collaboration platform and a powerful tool for testing, 
+   developing, and documenting APIs (Application Programming Interfaces). 
+   It provides a user-friendly graphical interface for making HTTP requests to web services and APIs, 
+   making it easier for developers to interact with and test APIs   
+   
+Q) API:
+ans: 
+   stands for "Application Programming Interface." 
+   It is a set of rules and protocols that allows different software applications to communicate with each other. 
+   APIs define the methods and data formats that applications can use to request and exchange information. 
+   
+   
+Q. route:
+ans: 
+   route/path part of the url after the domain name 
+
+
+Q. Why are JWTs called 'web tokens,' and can we use them in mobile applications ?
+ans:  
+
+    JSON Web Tokens (JWTs) are called "web tokens" because they are primarily designed for use on the web. 
+    They are a compact, self-contained means of representing claims securely between two parties, 
+    and these claims can be used in various scenarios within web applications, APIs, and web services. 
+    The "web" in "web tokens" reflects their original and most common use case in web applications.
+
+    However, JWTs are not limited to web applications and can be used in other contexts as well, including mobile applications. 
+    Here's how JWTs can be used in mobile applications:
+
+    Authentication: 
+      JWTs can be used for user authentication in mobile apps. 
+      When a user logs in, the server can issue a JWT token containing the user's identity, 
+      which is then used for subsequent authenticated requests.
+
+    Authorization: 
+      JWTs can convey authorization information in mobile apps. 
+      The claims in a JWT can include user roles or permissions, 
+      which the mobile app can use to determine what actions the user is allowed to perform.
+
+    Secure Communication: 
+      JWTs can be used for secure communication between mobile apps and back-end APIs. 
+      The token can be included in API requests to verify the identity of the user and ensure data privacy and security.
+
+    Single Sign-On (SSO): 
+      JWTs are often used in single sign-on solutions, 
+      where a user logs in once and is authenticated across multiple web and mobile applications.
+
+    Data Exchange: 
+      JWTs can be used to exchange data securely between different services or components of a mobile app, 
+      providing data integrity and authentication.
+
+    
+    When using JWTs in mobile applications, it's important to follow best practices for security, 
+    including token expiration and secure storage. 
+    Mobile app developers can leverage libraries and frameworks to generate, decode, and manage JWTs easily.
+
+    In summary, while JWTs are commonly associated with web applications, 
+    they are a versatile tool for secure authentication, authorization, and 
+    data exchange and can be effectively used in mobile applications as well.
+
+
+
+Q) Token Based Auth in python ?
+ans :
+
+    1. JSON Web Tokens (JWT) Authentication:
+       JSON Web Tokens are a common method for securing web applications and APIs. 
+       To implement JWT authentication in your Python web application, you'll typically follow these steps:
+
+    Use a JWT library, such as PyJWT, to generate and validate tokens.
+    When a user logs in, generate a JWT containing their identity (e.g., user ID) and 
+    any additional claims (e.g., roles, permissions).
+    Send the JWT to the client, typically as part of the response.
+    
+    The client includes the JWT in the Authorization header of subsequent requests.
+    On the server, verify and decode the JWT, ensuring that it hasn't been tampered with and is not expired.
+    Use the claims within the JWT to determine the user's identity and permissions.
+
+
+   2. OAuth 2.0 Authentication:
+
+     OAuth 2.0 is a more complex protocol typically used for user authorization, 
+     often in the context of third-party authentication (e.g., "Sign in with Google" or "Sign in with Facebook"). 
+     To implement OAuth 2.0 in your Python web application, you can use libraries like Authlib or oauthlib. Here are the general steps:
+
+     Set up an OAuth 2.0 provider (e.g., your web application) and a client (e.g., a mobile app or another web service).
+     The client initiates the OAuth flow by redirecting the user to the authorization endpoint of your application.
+     The user logs in and grants permissions to the client.
+     Your application generates an access token and sends it to the client.
+     The client uses the access token to make authorized requests to your application's API.
+     Keep in mind that implementing OAuth 2.0 can be more complex and may involve compliance with specific OAuth 2.0 flows 
+     (e.g.,   Authorization Code Flow or Implicit Flow) depending on your use case.
+
+   3. Token Management:
+
+     In both JWT and OAuth 2.0, token management is essential. 
+     You'll need to handle token creation, storage, validation, and revocation. 
+     Additionally, you should implement token expiration to enhance security.
+
+   4. Token Storage:
+
+     Tokens are usually stored securely, both on the server and on the client side. 
+     For server-side storage, databases are commonly used. 
+     For client-side storage, options include HTTP cookies, local storage, or session storage, depending on the use case.
+
+   The specific implementation details can vary depending on your web framework (e.g., Flask, Django, FastAPI) and 
+   your application's requirements. 
+   It's essential to refer to the documentation of the framework and libraries you choose for your Python web application.
+   
+   
+Q) Authentication Methods :
+ans :
+
+    (OAuth1, OAuth2, OpenID Connect, and JWT)
+    
+    Django:
+
+    1)Django-Authentication System: 
+       Django provides a built-in authentication system that includes user authentication, user registration, and password management. 
+       It uses session-based authentication by default.
+
+    2)Django's-User Model: 
+       You can use Django's built-in user model or extend it to add custom fields and methods.
+
+    3)Django-Allauth: 
+       A popular third-party package that extends Django's authentication system, 
+       providing features like social authentication, email confirmation, and more.
+
+    4)Django-Social Auth: 
+       These are third-party packages for implementing social authentication, allowing users to log in using their social media accounts.
+
+    5)Token-Based Authentication: 
+       You can implement token-based authentication using Django Rest Framework (DRF) for building RESTful APIs. 
+       DRF provides token and JWT authentication.
+
+    6)OAuth2: 
+       Django OAuth Toolkit is a package that allows you to implement OAuth2 authentication and authorization for your application.
+
+    7)Django OAuth2 Provider: 
+       Another third-party package for OAuth2 authentication.
+
+     
+=========================================================================================================================================
+
+
+FLASK:
+
+   
+
+
+=========================================================================================================================================
+# DATABASE & SQL #
+
+Q)  Database ?
+ans :
+    A database is an organized collection of data so that it can be easily accessed.
+    To manage these databases, Database Management Systems (DBMS) are used.
+     
+    two types :
+     1)DBMS
+     2)RDBMS
+
+Q)  Table:
+ans :
+    a table is an organized collection of data stored in the form rows & columns 
+  
+Q)  DBMS ?
+ans :
+    Database Management Systems (DBMS) are software systems 
+    used to store, retrieve, and run queries on data.
+    A DBMS serves as an interface between an end-user and a database, 
+    allowing users to create, read, update, and delete data in the database.
+
+
+Q)  RDBMS ?
+ans :
+
+    RDBMS stands for Relational Database Management System. 
+    RDBMS is the basis for SQL, and for all modern database systems
+    like MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.
+    A Relational database management system (RDBMS) is a database management system
+    (DBMS) that is based on the relational model
+    The data in an RDBMS is stored in database objects which are called as tables.
+    This table is basically a collection of related data entries and it consists of numerous columns and rows.  
+       
+
+Q)  SQL :
+ans :
+    SQL stands for the Structured Query Language.
+    It is the standard language used to maintain the relational database and 
+    perform many different data manipulation operations on the data.
+      
+Q)  SQL usage ?
+ans :
+ 
+    SQL is responsible for maintaining the relational data and the data structures present in the database. 
+    Some of the common usages are given below:
+    
+    To execute queries against a database
+     To retrieve data from a database
+     To inserts records in a database
+     To updates records in a database
+     To delete records from a database
+     To create new databases
+     To create new tables in a database
+     To create views in a database
+     To perform complex operations on the database. 
+     
+Q)  Sql  vs  No-sql :
+ans :
+    SQL (Structured Query Language) and NoSQL (Not only SQL) are two different types of database 
+    management systems.
+
+    SQL databases are relational databases that store data in tables with a fixed schema, 
+    and use SQL for querying and manipulating data. SQL databases are ideal 
+    for applications that require complex querying and data integrity, 
+    such as financial systems, transaction processing systems, and inventory management systems.
+
+    NoSQL databases, on the other hand, 
+    are non-relational databases that store data in flexible, 
+    unstructured formats, and use a variety of query languages, 
+    such as MongoDB's BSON and Cassandra's CQL. NoSQL databases are ideal 
+    for applications that require scalability, performance, and 
+    flexibility, such as social media platforms, content management systems, and 
+    real-time analytics systems.     
+     
+----------- CRUD--------------------------------------------
+     
+Q)  Create :
+ans : 
+    CREATE DATABASE databasename;
+    CREATE tabeltDB;
+    
+    CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,  );
+
+Q)  Insert :
+ans :
+    INSERT INTO table_name (column1, column2, column3, ...)
+    VALUES (value1, value2, value3, ...); 
+
+Q)  Insert vs Update :
+ans :
+    insert - to create now record 
+    update - for upating/add record to existing column 
+    
+Q)  Drop :
+ans :
+    DROP TABLE table_name;
+   
+Q)  TRUNCATE :
+ans :
+    TRUNCATE TABLE table_name;
+
+Q)  Alter :(add,rename,modify) 
+ans :
+    ALTER TABLE table_name
+    RENAME COLUMN old_name to new_name;
+
+    ALTER TABLE table_name
+    ADD column_name datatype;
+    
+    ALTER TABLE table_name
+    DROP COLUMN column_name;    
+
+
+
+2)  ORDER BY
+ans: 
+    The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+
+3)  Difference between DELETE, DROP and TRUNCATE:
+ans: 
+    Drop: 
+    	the DROP command is used to remove the whole database or table indexes, data, and more
+    	
+    DELETE:
+    	The DELETE command is used to delete particular records from a table
+    
+    Truncate:
+       Whereas the TRUNCATE command is used to remove all the rows from the table. 
+       The TRUNCATE command is used to delete/remove the complete data(all rows) from the table
+       
+Q)  alter:
+ans :
+    The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+    The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
+
+    
+Q)  ALTER vs Update :
+ans :
+          
+       
+4)  UPDATE :
+ans:
+    The UPDATE statement is used to modify the existing records in a table.
+    
+    UPDATE table_name
+    SET column1 = value1, column2 = value2, ...
+    WHERE condition;
+
+5)  DELETE :
+ans:
+    DELETE FROM table_name WHERE condition; 
+   
+6)  SELECT TOP / limit 
+ans :
+    SELECT TOP - sql server
+    limit - mysql 
+
+7)  min & max
+ans : 
+    The MIN() function returns the smallest value of the selected column.
+    The MAX() function returns the largest value of the selected column.
+
+8)  count, avg, sum
+ans :
+
+9)  JOIN
+ans :
+    JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+    
+    a)LEFT join :
+    	The LEFT JOIN keyword returns all records from the left table (table1), 
+    	and the matching records from the right table (table2). 
+    	The result is 0 records from the right side, if there is no match.
+     
+    b)RIGHT join :
+    	The RIGHT JOIN keyword returns all records from the right table (table2), 
+    	and the matching records from the left table (table1). 
+    	The result is 0 records from the left side, if there is no match.
+    
+    c)FULL OUTER join :
+    	The FULL OUTER FULL keyword returns all records 
+    	when there is a match in left (table1) or right (table2) table records.
+    
+    d)SELF join :
+    	A self join is a regular join, but the table is joined with itself.
+    
+    e)inner join:
+       
+     
+10) GROUP BY :
+ans : 
+    The GROUP BY statement groups rows that have the same values into summary rows,
+    like "find the number of customers in each country".
+    
+    The GROUP BY statement is often used with aggregate functions :
+    
+     (COUNT(), MAX(), MIN(), SUM(), AVG()) 
+    to group the result-set by one or more columns.
+    
+    
+11) HAVING clause :
+ans : 
+     clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+     
+12) Stored Procedure :
+ans : 
+    (note:  this are like python function, u just need to pass the parameter)  
+    is a prepared SQL code that you can save, so the code can be reused over and over again.
+    
+    or 
+    
+    A stored procedure in SQL is a precompiled collection of one or more SQL statements 
+    that are stored on the database server for later execution. 
+    Stored procedures are often used to encapsulate a sequence of SQL statements into a single logical unit, 
+    making it easier to manage, maintain, and execute complex database operations. 
+  
+    eg: 
+    
+    1) Creating a Stored Procedure::
+    
+        CREATE PROCEDURE sp_GetEmployeeByID (@EmployeeID INT)
+        AS
+        BEGIN
+        SELECT * FROM Employees WHERE EmployeeID = @EmployeeID;
+        END;
+    
+        call the function:
+    
+    __________________________________________________________
+    
+    2)Executing a Stored Procedure:
+    
+        EXEC sp_GetEmployeeByID @EmployeeID = 123;    
+        
+    __________________________________________________________ 
+    
+    3)Modifying a Stored Procedure:
+    
+       ALTER PROCEDURE sp_GetEmployeeByID (@EmployeeID INT, @DepartmentID INT)
+       AS
+       BEGIN
+       SELECT * FROM Employees WHERE EmployeeID = @EmployeeID AND DepartmentID = @DepartmentID;
+       END;
+      
+    __________________________________________________________________
+       
+    4)Dropping a Stored Procedure:
+    
+       DROP PROCEDURE sp_GetEmployeeByID;
+    
+    ________________________________________
+    
+    
+    Stored procedures are beneficial for various reasons:
+
+        a)Code Reusability: You can reuse the same logic across different parts of your application.
+        b)Performance: They can improve performance by reducing the amount of data sent between the database and the application.
+        c)Security: You can grant execute permissions on stored procedures, keeping the underlying tables secure.
+        
+    Remember that the syntax and features of stored procedures may vary depending on 
+    the specific database management system (e.g., Microsoft SQL Server, MySQL, PostgreSQL, Oracle) you are using.
+    
+    ===============================================================================================
+    
+    
+13) KEY's  ?
+ans :
+     
+    a key is an attribute or set of attributes  that uniquley identifies any record( or tuple) from the table
+
+    purpose:
+     -key used to uniquely identifies any record or row of the data from the table 
+      -to establish relationship  
+   
+    A)Primary Key :
+       A primary key is a column or set of columns in a relational database table 
+       that uniquely identifies each row in the table. 
+       It serves as a unique identifier for each record in the table and allows 
+       for efficient data retrieval, updating, and deletion. 
+    
+      use : 
+       - to remove duplicate
+       - to uniquely identify row
+       - it facilitates the  establishment of relationships bet tables in database  eg. foreignkey
+       - reference point for indexing and sorting 
+       - improve performance of queries 
+       - inforce data integrity constraints, such as preventing the 
+       deletion of a row that is referenced by a foreign key in another table.
+       - Overall, a primary key is a fundamental aspect of relational database design and 
+      is critical to ensuring the accuracy, consistency, and efficiency of data storage and retrieval.
+      
+      
+    B)Unique Key :
+    
+      - A unique key is a single or combination of fields that ensure all 
+         values stores in the column will be unique. 
+      - it takes null value per column 
+      - It means a column cannot stores duplicate values. 
+      - This key provides uniqueness for the column or set of columns 
+      - It ensures the integrity of the column or group of columns to store different values into a table. 
+    
+    
+    C)Foreign Key :
+    	In SQL a Foreign Key is a constraint that is used to establish a link between two tables in a relational database. 
+   	This relationship is used to maintain the consistency and integrity of data in the database.
+            
+    D)Super Key
+    
+    E)Candidate Key/Composite Key :
+    
+    F)Alternate Key/Secondary Key :
+      
+14) contraint :
+ans : 
+    contraint can be used to specify the limit on the data type of table. 
+    constraint can be specified  while creating or altering  the table statement. 
+    eg. 
+        NOT NULL,
+        CHECK
+        DEFAULT
+        UNIQUE
+        PRIMARY KEY
+        FOREIGN KEY
+         
+
+16) Query Execution order :
+ans : 
+
+    1)FROM  (Tables are joined to get the base data.)
+    2)WHERE  (The base data is filtered.)
+    3)GROUP  (BY The filtered base data is grouped.)
+    4)HAVING  (The grouped base data is filtered.)
+    5)SELECT  (The final data is returned.)
+    6)ORDER BY  (The final data is sorted.)
+    7)LIMIT  (The returned data is limited to row count.)
+
+17) SQL statements:
+ans :
+    select,
+    create,
+    insert,
+    drop,
+    update,
+    delete,
+    alter,
+    truncate,
+    commit,
+    rollback
+   
+18) How can you optimize SQL queries for better performance?
+ans :
+    a)Use indexes:database to quickly locate the required data
+    b)Avoid using subqueries
+    c)Reduce the number of joins: 
+    d)Use aggregate functions
+    e)Optimize your subqueries: 
+    f)Use stored procedures:
+  0
+    By applying these techniques, you can optimize your SQL queries for better performance 
+    and improve the overall performance of your database application.
+  
+19) what is indexing ?
+ans :
+    In SQL, an index is a database structure that allows you 
+    to quickly retrieve specific rows of data from a table.
+    An index is essentially a pointer to the location of specific data within a table,
+    much like the index of a book that helps you quickly locate a specific topic.
+
+20) Database Cursor ? 
+ans :
+    A database cursor is an identifier associated with a group of rows. 
+    It is, in a sense, a pointer to the current row in a buffer.  
+
+
+21) union,union_all,minus & interset ?
+ans :
+    (all work  on  querysets)
+    union - return unique values only, removes duplicate )
+    union_all (union return all values )
+    minus - return unmatched values
+    interset - return matched values only
+     
+22) What is a view in SQL, and how is it used?
+ans :
+    In SQL, a view is a virtual table that is created based on the result set of a SQL query. 
+    The view itself does not contain any data,
+    but it provides a way to retrieve and display data from one or more tables in a pre-defined way.
+
+ 
+
+23) Data Integrity ?
+ans :
+    Data Integrity is the assurance of accuracy and consistency of data over its entire life-cycle and 
+    is a critical aspect of the design, implementation, and usage of any system which stores, processes, or retrieves data.
+     
+    type:
+     a)Entity Integrity 
+     b)Referential Integrity 
+     c)Domain Integrity
+     d)User-Defined Integrity 
+     
+24) List the different types of relationships in SQL.
+ans :  
+    a)One-to-One - This can be defined as the relationship between two tables 
+         where each record in one table is associated with the maximum of one record in the other table.
+    
+    b)One-to-Many & Many-to-One - 
+        This is the most commonly used relationship where a record in a table is associated 
+        with multiple records in the other table.
+        
+    c)Many-to-Many - 
+        This is used in cases when multiple instances on both sides are needed for defining a relationship.
+    
+    d)Self-Referencing Relationships - 
+        This is used when a table needs to define a relationship with itself.
+
+
+25) ACID property :
+ans :
+    A transaction is a single logical unit of work that accesses and possibly 
+    modifies the contents of a database. 
+    Transactions access data using read and write operations. 
+    In order to maintain consistency in a database,
+    before and after the transaction, certain properties are followed. 
+    These are called ACID properties. 
+
+    In the context of transaction processing,
+    the  ACID property properties of a transaction: 
+    atomicity, consistency, isolation, and durability. 
+    
+    a)atomicity :
+       it mean that either the entire transaction takes place at once or doesn’t happen at all. 
+       There is no midway i.e. transactions do not occur partially.
+    
+    b)consistency :
+       This means that integrity constraints must be maintained 
+       so that the database is consistent before and after the transaction
+    
+    c)Isolation :
+       This property ensures that multiple transactions can occur concurrently 
+       without leading to the inconsistency of the database state
+    
+    d)Durability :
+       This property ensures that once the transaction has completed execution, 
+       the updates and modifications to the database are stored in and written to disk 
+       and they persist even if a system failure occurs.
+         
+         
+26) What are the different types of indexes in SQL?
+ans : 
+     
+    Unique Index
+    Clustered Index
+    Non-Clustered Index
+    Bit-Map Index
+    Normal Index
+    Composite Index
+    B-Tree Index
+    Function-Based Index
+       
+
+27) What are the different types of SQL operators?
+ans :
+ 
+    a)Arithmetic operators: 
+    b)Logical operators: 
+    c)Comparison operators: 
+    d)Bitwise operators: 
+    e)Compound operators:
+    f)String operators:
+    
+    
+28) trigger statements?
+ans :
+
+    A trigger is a set of SQL statements that reside in a system catalog. 
+    It is a special type of stored procedure that is invoked automatically in response to an event. 
+    It allows us to execute a batch of code when an insert,
+    update or delete command is run against a specific table because the trigger 
+    is the set of activated actions whenever DML commands are given to the system.
+    
+    SQL triggers have two main components one is action, and another is an event. 
+    When certain actions are taken, an event occurs as a result of those actions.
+    
+29) What is the difference between IN and BETWEEN operators?
+ans :
+    Both of these operators are used to find out the multiple values from the table.
+    Differences between these operator is that the
+    
+    BETWEEN  : operator is used to select a range of data between two values while 
+    IN  : operator allows you to specify multiple values
+
+Q)  categories the constraints
+ans : 
+    SQL categories the constraints into two levels:
+
+    a) Column Level Constraints :
+     
+    b) Table Level Constraints :
+     
+Q)  normalization ?
+ans :      
+    Database normalization is the process of efficiently organizing data in a database.
+    There are two reasons of this normalization process −
+       
+    1)Eliminating redundant data, for example, storing the same data in more than one table.
+    2)Ensuring data dependencies make sense.
+      
+    Normalization  divides the large table into  samller tables and links them using Relationship     
+    
+    example:
+      id name age  branch HOD
+
+    type :
+
+      1NF:
+      one record should not contiain multivalue nd repeating value 
+
+      2NF:
+      it should in 1NF 
+      all non key field must be dependant on primary key 
+      if table is not in 2NF then break table
+
+      3Nf:
+      should be in 2NF 
+      any non key field should not depend on other non key field 
+
+    
+30) What is SQL Injection?
+ans :
+
+    SQL injection is a type of vulnerability in website 
+    and web app code that allows attackers to control back-end operations 
+    and access, retrieve, and destroy sensitive data from databases. 
+    In this technique, malicious SQL statements are inserted into a database entry field,
+    and once they are performed, the database becomes vulnerable to an attacker.
+
+31) RANK function & DENSE_RANK ?
+ans :
+    
+       
+    
+# MYSQL #
+
+
+1)  MySQL ?
+ans :
+    MySQL is an open-source relational database management system (RDBMS). 
+    It runs on the web as well as on the server. MySQL is fast, reliable, and easy to use. 
+    It is open-source software. MySQL uses standard SQL and compiles on a number of platforms. 
+    It is a multithreaded, multi-user SQL database management system.
+   
+
+2)  What are some of the advantages of using MySQL?
+ans :
+
+    Flexibility: MySQL runs on all operating systems
+    Power: MySQL focuses on performance
+    Enterprise-Level SQL Features: MySQL had for some time been lacking in advanced features 
+    such as subqueries, views, and stored procedures.
+    Full-Text Indexing and Searching
+    Query Caching: This helps enhance the speed of MySQL greatly
+    Replication: One MySQL server can be duplicated on another, providing numerous advantages
+    Configuration and Security
+
+3)  What is Sharding in SQL?
+ans :
+    The process of breaking up large tables into smaller chunks (called shards) 
+    that are spread across multiple servers is called Sharding. 
+    The advantage of Sharding is that since the sharded database is generally much smaller than the original;
+     queries, maintenance, and all other tasks are much faster.
+
+4)  Can you explain the logical architecture of MySQL?
+ans :
+    The top layer contains the services most network-based client/server tools or 
+    servers need such as connection handling, authentication, security, and so forth.
+    The second layer contains much of MySQL’s brains.
+    This has the code for query parsing, analysis, optimization, caching, and all the built-in functions.
+    The third layer contains the storage engines that are responsible for storing and retrieving 
+    the data stored in MySQL.
+     
+    eg.
+      
+     CLIENT 
+      |
+      |
+     connection/thread handling
+     |
+     parser
+     |
+     optimizer
+     
+     
+5)  What is Scaling in MySQL?
+
+ans :
+
+    scaling capacity is actually the ability to handle the load,
+    eg.
+    
+    Quantity of data
+    Number of users
+    User activity
+    Size of related datasets
+
+
+6)  CASE statement ?
+ans :
+    The CASE statement goes through conditions and returns a value
+    when the first condition is met (like an if-then-else statement).
+    So, once a condition is true, it will stop reading and return the result. 
+    If no conditions are true, it returns the value in the ELSE clause.
+       
+       
+5)  What is the heap table?
+ans :
+
+    Tables that are present in memory is known as HEAP tables. 
+    When you create a heap table in MySQL, you should need to specify the TYPE as HEAP. 
+    These tables are commonly known as memory tables. 
+    They are used for high-speed storage on a temporary basis. 
+    They do not allow BLOB or TEXT fields.
+       
+     
+6)  What is BLOB and TEXT in MySQL?
+ans :
+    BLOB is an acronym that stands for a large binary object. It is used to hold a variable amount of data.
+       
+       
+7)  What is a trigger in MySQL?
+ans :
+    A trigger is a set of codes that executes in response to some events.
+    
+8)  What is the difference between FLOAT and DOUBLE?
+ans :
+    float  - FLOAT stores floating-point numbers with accuracy up to 8 places and allocate 4 bytes.
+    DOUBLE - stores floating-point numbers with accuracy up to 18 places and allocates 8 bytes.
+     
+9)  ROW_NUMBER () Function :
+ans :
+     
+    The ROW_NUMBER() function in MySQL is used to returns the sequential number for each row within its partition.
+     It is a kind of window function. The row number starts from 1 to the number of rows present in the partition.
+    
+10) What is REGEXP?
+ans :
+   
+    REGEXP is a pattern match using a regular expression. 
+    The regular expression is a powerful way of specifying a pattern for a sophisticated search.
+    Basically, it is a special text string for describing a search pattern. 
+    To understand it better, you can think of a situation of daily life 
+    when you search for .txt files to list all text files in the file manager. 
+    The regex equivalent for .txt will be .*\.txt.    
+    
+11) What is the save point in MySQL?
+ans :
+      
+    A defined point in any transaction is known as savepoint.
+    SAVEPOINT is a statement in MySQL, 
+    which is used to set a named transaction savepoint with the name of the identifier.
+
+
+Q)  Null functions ?
+ans :
+
+    Null functions are required to perform operations on the null values stored in our database.
+    
+    1)ISNULL() : Helps us to replace NULL values with the desired value. 
+    2)IFNULL() : Allows us to return the first value if the value is NULL, and otherwise returns the second value.  
+    
+
+12) What is the usage of ENUMs in MySQL?
+ans :
+    
+    ENUMs are string objects. 
+    By defining ENUMs, we allow the end-user to give correct input as in case the 
+    user provides an input that is not part of the ENUM defined data, 
+    then the query won't execute, and an error message will be displayed which says "The wrong Query". 
+    For instance, suppose we want to take the gender of the user as an input, 
+     so we specify ENUM('male', 'female', 'other'),
+    and hence whenever the user tries to input any string any other than these three it results in an error.
+    
+    
+13) What is MySQL data directory?
+ans :
+    MySQL data directory is a place where MySQL stores its data. 
+     
+     
+14) What is the usage of regular expressions in MySQL?
+ans :
+    In MySQL, regular expressions are used in queries for searching a pattern in a string.
+    
+15) What are the drivers in MySQL?
+ans :
+
+
+16) ROW_NUMBER ?
+ans :
+    The ROW_NUMBER function in MySQL is a window function or 
+    analytic function that is used when we want to return a unique sequential
+    number starting from 1 for record in the result set.
+
+--------------------------------------- QUERIES -------------------------------------------
+    
+
+3)  second highest salary ?
+ans :
+    SELECT salary,name FROM employee ORDER BY salary DESC LIMIT 1 OFFSET 1
+    
+4)  query to fetch duplicate rows in table?
+ans :
+    
+    SELECT first_name ,count(*) FROM employee 
+    groupby first_name
+    having count(first_name) > 1
+    
+5)  common record from 2 table:
+ans :
+    select * from employee 
+    INNER JOIN emp employee.id = emp.id 
+    
+6)  query to find thr nth record from table
+ans :
+    select * from employee limit 1,3
+    
+7)  query used to find last 5 records from table
+ans :
+    select * from employee order by ID limit 5 
+    
+8)  distinct records from table without using distinct keyword
+ans :
+    
+    a)by using UNION;
+       
+        SELECT emp_name FROM empolyee 
+        UNION
+        SELECT emp_name FROM empolyee
+        
+    b) by using groupby
+       
+       select emp_name from employee
+       groupby emp_name
+       
+9)  query to find max salary 
+ans :
+    SELECT salary FROM employee
+    groupby salary dep_name
+        
+10) why cant we use aggregate function with where clause 
+ans :
+    The reason you can't use in the WHERE clause is the order of evaluation of clauses.
+    it is because where clause comes before the groupby cluase in query execution order/evaluation     
+   
+11) remove duplicate record from table (self join) ?
+and :
+    eg. (remove duplicate record from table)
+       
+       DELETE E1 from employee E1 
+       INNER JOIN employee E2 
+       WHERE E1.ID < E2.ID AND E1.NAME=E2.NAME
+
+    
+==================================================================================================================
+
+
+# PANDAS #
+
+
+1)what is pandas?
+ans:
+    pandas is used for working with data sets.
+    It has functions for analyzing,cleaning,exploring, & manipulating data.
+     
+2) use of pandas: 
+ans: 
+    pandas allows us to analyze big data & make conclusions based on statistical theories.
+    pandas can clean messy data sets & make them readable and relevant 
+    relevant data is very important in data science 
+    
+3) what can pandas can do ?
+ans:
+    1)pandas gives u answers about the data like :
+   	 -is there a correlation between  two or more columns 
+        -what is average value 
+        -max & min value 
+    2)pandas also able to delete rows that are not relevant or contains wrong values like empty or NULL value (called data cleaning)
+              
+5) Mention the different types of Data Structures in Pandas?
+ans:
+    Pandas provide two data structures, which are supported by the pandas library, Series, and DataFrames. 
+    Both of these data structures are built on top of the NumPy.
+    A Series is a one-dimensional data structure in pandas, 
+    whereas the DataFrame is the two-dimensional data structure in pandas.
+
+4) iloc & loc ?
+ans : 
+     The loc and iloc functions in Pandas are used to slice a data set. 
+     The function .loc is primarily used for label indexing, while .iloc is mainly used for integer indexing
+        
+         or 
+       
+    loc -loc is label-based, which means that you have to specify rows and columns based on their row and column labels. 
+    iloc -is integer index based, so you have to specify rows and columns by their integer 
+    
+5)Series ?
+ans :
+    A Series is defined as a one-dimensional array that is capable of storing various data types. 
+    The row labels of series are called the index. 
+    By using a 'series' method, we can easily convert the list, tuple, and dictionary into series. 
+    A Series cannot contain multiple columns.
+
+6)dataframe ?
+ans :
+    It is a widely used data structure of pandas and works with a two-dimensional array with labeled axes (rows and columns).
+    DataFrame is defined as a standard way to store data and has two different indexes, 
+    i.e., row index and column index. It consists of the following properties:
+
+    The columns can be heterogeneous types like int, bool, and so on.
+    It can be seen as a dictionary of Series structure where both the rows and columns are indexed. 
+    It is denoted as "columns" in case of columns and "index" in case of rows.
+
+7) piovt table: 
+ans :
+     A Pandas pivot table is a way to summarize and aggregate data in a DataFrame
+     by grouping one or more columns and applying a mathematical or statistical function 
+     to one or more other columns. It's similar to the Excel PivotTable feature.
+     
+     it transform & reshape the data
+
+
+9) groupby, apply, map :
+ans :
+     a)groupby :
+       function is used to collect identical data into groups and perform aggregate functions on the grouped data
+       main purpose of group by is summaraize & aggregate the data 
+     
+     b)apply :
+      
+       
+10)  merge(), join(), concat() ?
+ans : 
+     append(row)
+     concat(row,column)
+ 
+     In pandas, concat, merge, and join are used to combine data from multiple DataFrames or Series. 
+     Although they are all used for combining data, they have different functionalities:
+     
+     concat() - concat is used to combine data along a particular axis, (pd)         
+     merge() - merge is used to join data based on common columns, (pd)
+     join() - join is used to join data based on the index or a column. (df)
+     
+     
+11)  Multi-index and groupby :
+ans :
+     Multi-index refere to select more than one row and column in your index. 
+     It is a multi-level or hierarchical object for pandas object. 
+     Now there are various methods of multi-index that are used such as MultiIndex.
+     from_arrays, MultiIndex.from_tuples, MultiIndex.
+     from_product, MultiIndex.from_frame, etc which helps us to create multiple indexes from arrays, tuples, dataframes, etc.     
+     
+12) pd.to_datetime()
+ans :
+    print(pd.to_datetime(df['Inserted']))
+    
+
+13) sort_values()
+ans :
+    order rows by values of a column (high to low)
+    	
+14) Pandas DataFrame.cut()
+ans :
+    The cut() method is invoked when you need to segment and sort the data values into bins. 
+    It is used to convert a continuous variable to a categorical variable. 
+    It can also segregate an array of elements into separate bins.
+    The method only works for the one-dimensional array-like objects.
+    
+    
+Q)  merge()
+ans :
+     Pandas merge() is defined as the process of bringing the two datasets together into one 
+     and aligning the rows based on the common attributes or columns    
+     
+     
+15)What is the difference between the pivot_table and the groupby? 
+ans :  
+     groupby method is generally enough for two-dimensional operations, 
+     but pivot_table is used for multi-dimensional grouping operations.   
+     
+     Both pivot_table and groupby are used to aggregate your dataframe. 
+     The difference is only with regard to the shape of the result.  
+     
+     
+  
+IMPORTING DATA (reading data files)
+EXPORTING DATA (creating file from data file)
+CREATE TEST OBJECTS ( df,series)
+INSPECTING DATA ()
+SELECTION 
+DATA CLEANING 
+FILTER ,SORT,GROUPBY
+JOIN/COMBINE 
+STATISTICS
+
+
+=====================================================================================================================
+
+          
+crud
+alter
+delete vs truncate vs drop  & alter vs update
+group by
+having 
+order by
+aggreate 
+like 
+joins 
+normalization
+keys
+indexing , views , stored procedure ,sharding
+
+
+
+
+Description
+Technologies : 
+    • Python 
+    • Django 
+    • HTML 
+    • CSS 
+    • JavaScript 
+    • JQuery 
+    • Bootstrap 
+    • PostgresQL 
+    • Shell Scripting 
+Roles and Responsibilities :
+    • Development of the  back-end with Django and designed models for the users and admins. 
+    • Designing Front-end templates and creating webpages. 
+    • Integrating Payment Gateway with Paypal. 
+    • Creating two different interfaces for Admins and Users. 
+    • Handling of Postgres Database and ORM models. 
+Description :
+It is an E-commerce website developed in Django Framework. This website is designed by HTML5, CSS, JavaScript , Bootstrap in Front End , Django Framework in Back End and PostgreSQL as database. It involves using technology to organise, and synchronise orders and activities along with services and assistance. 
+In this project , we have developed User site that allows people to buy physical goods, services, and digital products over the internet.  Also Personalised Custom Admin site was developed for back-end administrators to manage orders, users, products and it gives the reports of Sales, Customers and product response. 
+Hosting
+Private hosting with Apache / Nginx
+Django Version
+3.2.6
+Python Version
+3.8.10
+Versioning
+Git
+Project Management Tool
+None
+Site Responsiveness
+Yes
+Technology
+AJAX, CSS 3, HTML 5, JavaScript, Python
+Database
+PostgreSQL
+Framework
+Django
+OS
+UNIX / LINUX
+Payment Gateways
+PayPal
+Third Party Components
+Facebook API, Google API, Instagram API, LinkedIn API, MailChimp API, Twitter API
+Role
+    • Code, debug, test, and document application programs 
+    • Database creation and updation 
+    • Gathered Business requirements if needed 
+    • Time and Effort estimation 
+    • Project Deployment 
+
+
+
+
+select * from users u inner join permissions p on  u.id = p.user_id
+    
+Advance concept :- Redis, Crontab, Celery, Channel, DB indexing,
+
+
+==================================================
+
+
+CODE:
+
+Q. RETURN LIST OF KEYS FROM GIVEN NESTED DICTIONARY
+ans: 
+
+   a = {
+      "name":"sunil", 
+      "age":60, 
+      "role":{"name":"developer", "work": {"coding":None, "raj":{"test":{}}}}
+     }
+    
+
+key_list = []
+
+def find_keys(a):
+    
+    for k,v in a.items():
+        if isinstance(v, dict):
+            key_list.append(k)
+            return find_keys(v)
+        else:
+            key_list.append(k)
+    
+    return key_list
+        
+print(find_keys(a))
+
+
+
+===========================================================================================
+
+
+
+
+synchronous programming - sequencial 
+
+
+ASYNCHRONOUS PROGRAMMING :
+   it is programming paradigm which allows us to write non-  blocking concurrent code that run multiple task without blocking other task. i.e two independent task can run concurrenlty
+   
+   its not multi-threading or multitasking but it is concurrent programming  
+   library to use :-  import asyncio
+   It help tp speed up the code in certain cases not all 
+   it helps operation like 
+   
+   I/O operation
+   http request
+   db operation
+   
+there are 2 appraoches to use computation power 
+
+1) parallelism
+2) concurrency
+
+
+python concurrency:
+- async keyword
+- await keyword
+- asycncio modoule
+ 
+
+Async-Await :
+
+
+async: In FastAPI, the async keyword is used to define asynchronous functions. An asynchronous function can perform non-blocking operations, allowing the program to continue executing other tasks while waiting for certain operations to complete. Asynchronous functions are typically defined using the async def syntax.
+
+
+await: The await keyword is used inside asynchronous functions to call other asynchronous functions or to wait for the completion of asynchronous operations. It is used to pause the execution of the current coroutine until the awaited task is complete, without blocking the entire program.
+
+
+FAST-API 
+
+
+
+1) What is FastAPI?
+ans : 
+     FastAPI is a modern, high-performance web framework for building APIs with Python. 
+     It is designed to be easy to use, while also leveraging the latest features of Python, such as type hints. 
+     FastAPI offers automatic generation of OpenAPI and JSON Schema documentation, as well as validation of request and response data based on Python type hints.
+
+
+2) How does FastAPI leverage type hints in Python?
+ans :
+     FastAPI uses Python type hints to automatically generate interactive documentation and validate the request and response data. 
+     By annotating function parameters and return types with type hints, FastAPI can provide better code completion in editors, 
+     enable automatic data validation, and generate accurate API documentation.
+    
+3) Explain the main features of FastAPI.
+ans :
+     FastAPI's key features include automatic generation of OpenAPI and JSON Schema documentation, 
+     support for asynchronous programming, dependency injection system, OAuth2 and JWT authentication, 
+     automatic validation and serialization of request and response data using Pydantic models, and interactive API documentation through Swagger UI and ReDoc.
+     
+4) How does FastAPI handle asynchronous programming?
+ans :
+     FastAPI natively supports asynchronous programming using Python's async and await syntax. 
+     It can handle asynchronous HTTP requests and responses, allowing developers to write efficient and concurrent code. 
+     This is particularly beneficial for handling I/O-bound operations, such as making requests to databases or external APIs.
+     
+5) What is Dependency Injection in FastAPI?
+ans :
+     Dependency Injection in FastAPI refers to the process of injecting dependencies into your route functions. 
+     Dependencies can include services like database connections, authentication mechanisms, or any other reusable component. 
+     FastAPI uses function parameters to declare dependencies, and it manages the creation and lifecycle of these dependencies.
+
+6) Explain the difference between Path parameters and Query parameters in FastAPI.
+ans :
+     Path parameters are used to capture values from the URL path itself, while Query parameters are included in the URL after the ? 
+     symbol. Path parameters are often used to define dynamic parts of the URL structure, while query parameters are typically used for filtering or modifying the results of a request.
+
+
+7) How does FastAPI handle request and response validation?
+ans :  
+     FastAPI leverages Pydantic models for request and response validation. Pydantic models define the expected structure of data, 
+     and FastAPI automatically validates incoming requests against these models. 
+     If the data doesn't match the expected structure, FastAPI generates detailed validation errors.
+     
+     
+8) What is the purpose of the BackgroundTasks class in FastAPI?
+ans :
+
+     BackgroundTasks in FastAPI allows you to schedule functions to run in the background after a response has been sent to the client. 
+     This is useful for performing tasks that should not block the API response, such as sending emails, updating logs, or any other asynchronous operation.
+     
+9) Explain the role of @app.middleware in FastAPI.
+ans :
+     Middleware in FastAPI allows you to intercept and modify both incoming requests and outgoing responses globally for all routes. 
+     By using the @app.middleware decorator, you can define middleware functions that 
+     execute before each request is processed and after each response is generated, providing a way to perform additional processing or customization.
+ 
+10) How does FastAPI handle authentication?
+ans :
+
+     FastAPI supports various authentication mechanisms, including OAuth2, JWT, and others. You can use decorators like   @depends and @security to implement authentication in your routes. 
+     FastAPI also provides built-in tools for handling common authentication scenarios, making it easier to secure your API endpoints
+     
+     
+     
+11) 

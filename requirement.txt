@@ -1,0 +1,5 @@
+
+python-jose
+fastapi uvicorn python-dotenv
+
+uvicorn main:app --reload
